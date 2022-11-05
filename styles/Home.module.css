@@ -8,22 +8,12 @@
 	padding: 4rem 0;
 }
 
-.title a {
-	color: green;
-	text-decoration: none;
-}
-
 .charlitalinks {
 	background-color: yellow;
 	display: flex;
 	align-items: flex-end;
 	flex-direction: column;
-}
-
-.title a:hover,
-.title a:focus,
-.title a:active {
-	text-decoration: underline;
+	padding: 7%;
 }
 
 .title {
@@ -34,7 +24,8 @@
 
 .title,
 .description {
-	text-align: center;
+	text-align: left;
+	padding: 7%;
 }
 
 .description {
