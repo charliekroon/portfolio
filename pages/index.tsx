@@ -18,10 +18,10 @@ export default function Home() {
 						href="/favicon.ico"
 					/>
 				</Head>
-				<main className={styles.main}>
-					<h1 className={styles.title}>
+				<div className={styles.main}>
+					<div className={styles.title}>
 						CHARLITA!{" "}
-					</h1>
+					</div>
 					<div
 						className={
 							styles.charlitalinks
@@ -37,7 +37,7 @@ export default function Home() {
 							Work
 						</Link>
 					</div>
-				</main>
+				</div>
 			</div>
 		</>
 	);

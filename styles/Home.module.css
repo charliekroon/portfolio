@@ -9,28 +9,22 @@
 }
 
 .charlitalinks {
-	background-color: yellow;
+	margin-left: 70%;
+	justify-content: flex-end;
 	display: flex;
-	align-items: flex-end;
 	flex-direction: column;
-	padding-right: 3%;
-	font-size: 4rem;
+	font-size: 50px;
 }
 
 .title {
-	margin: 0;
-	line-height: 1.15;
-	font-size: 2rem;
-	display: flex;
-	align-items: flex-start;
-	flex-direction: column;
+	background-color: green;
+	margin-left: 10%;
+	justify-content: flex-start;
 }
 
-.title,
-.description {
-	margin-top: 24%;
-	margin-right: 12%;
-	margin-left: 50%;
+.title .charlitalinks {
+	margin-top: 70%;
+	margin-right: 60%;
 }
 
 .description {
@@ -47,14 +41,6 @@
 	font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
 		DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New,
 		monospace;
-}
-
-.grid {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-wrap: wrap;
-	max-width: 800px;
 }
 
 .logo {
