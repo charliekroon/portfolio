@@ -11,14 +11,14 @@ body {
 	font-style: normal;
 }
 
-/* @font-face {
-	font-family: "Rubik";
-	src: url("../fonts/rubik/Rubik-Bold.ttf");
-	font-weight: bold;
+@font-face {
+	font-family: "Monteserrat";
+	src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf");
+	font-weight: light;
 	font-style: normal;
 }
 
-@font-face {
+/* @font-face {
 	font-family: "Rubik";
 	src: url("../fonts/rubik/Rubik-Italic.ttf");
 	font-weight: normal;

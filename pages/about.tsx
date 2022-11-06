@@ -11,7 +11,7 @@ export const AboutContainer = styled.div`
 `;
 
 export const Title = styled.p`
-	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-family: "Sonder";
 	font-weight: 100;
 	font-style: light-weight;
 	color: #1a1919;
@@ -25,7 +25,7 @@ export const Title = styled.p`
 `;
 
 export const Byline = styled.p`
-	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-family: "Sonder";
 	font-weight: 50;
 	font-style: light-weight;
 	color: #1a1919;
@@ -40,7 +40,7 @@ export const Byline = styled.p`
 `;
 
 export const Text = styled.text`
-	font-family: var(--montserrat-font);
+	font-family: "Monteserrat";
 	font-weight: 300;
 	letter-spacing: 1px;
 	font-size: 15px;
@@ -56,7 +56,7 @@ export const Text = styled.text`
 `;
 
 export const Header = styled.p`
-	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-family: "Sonder";
 	font-weight: 50;
 	font-style: light-weight;
 	color: #1a1919;
@@ -74,7 +74,7 @@ export default function About() {
 	return (
 		<>
 			<AboutContainer>
-				<Title>About</Title>
+				<Title>ABOUT</Title>
 				<Byline>{description}</Byline>
 				<Text>
 					{" "}
