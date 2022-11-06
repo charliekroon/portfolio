@@ -33,8 +33,12 @@ export default function Contact() {
 		<>
 			<AboutContainer>
 				<MenuBar />
-				<Title>Contact</Title>
-				<Text>Send me a text!</Text>
+				<Title>Hey!</Title>
+				<Text>
+					Send me a message / email.{" "}
+					<br />
+					Follow me on the internet:
+				</Text>
 			</AboutContainer>
 		</>
 	);
