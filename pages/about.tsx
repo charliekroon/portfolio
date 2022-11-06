@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
+import MenuBar from "../components/MenuBar";
 
 export const AboutContainer = styled.div`
 	min-height: 100vh;
@@ -85,6 +86,8 @@ export default function About() {
 	const description = "Hi, I am Charlie";
 	return (
 		<>
+			<MenuBar />
+
 			<AboutContainer>
 				<Title>ABOUT</Title>
 				<Byline>{description}</Byline>
