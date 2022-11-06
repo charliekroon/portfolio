@@ -3,7 +3,7 @@ import Link from "next/link";
 import styled from "styled-components";
 
 const TestFont = styled.h1`
-	font-family: "Rubik", sans-serif;
+	font-family: "Sonder";
 	font-weight: bold;
 	color: green;
 	font-size: 3rem;
@@ -90,7 +90,7 @@ export const MenuText = styled.text`
 // - add hover over on menu and hackerone link
 // - look for correct font
 
-export default function Home({allPostsData}) {
+export default function Home() {
 	const name = "Charlie Kroon";
 	const description =
 		"Software Engineer with a background in Journalism";

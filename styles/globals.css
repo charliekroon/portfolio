@@ -5,13 +5,13 @@ body {
 }
 
 @font-face {
-	font-family: "Rubik";
-	src: url("../fonts/rubik/Rubik-Regular.ttf");
+	font-family: "Sonder";
+	src: url("../fonts/SonderVpDemo-jE37l.ttf");
 	font-weight: normal;
 	font-style: normal;
 }
 
-@font-face {
+/* @font-face {
 	font-family: "Rubik";
 	src: url("../fonts/rubik/Rubik-Bold.ttf");
 	font-weight: bold;
@@ -23,7 +23,7 @@ body {
 	src: url("../fonts/rubik/Rubik-Italic.ttf");
 	font-weight: normal;
 	font-style: italic;
-}
+} */
 
 a {
 	color: inherit;
