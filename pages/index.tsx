@@ -22,10 +22,9 @@ export const Text = styled.span`
 `;
 
 export const TitleText = styled.text`
-	font-family: var(--montserrat-font);
+	font-family: "Monteserrat";
 	font-weight: 500;
 	letter-spacing: 2px;
-	text-transform: uppercase;
 	text-align: left;
 	line-height: 1.75em;
 	margin-bottom: 0vh;
@@ -46,7 +45,7 @@ export const Description = styled.span`
 `;
 
 export const DescriptionText = styled.text`
-	font-family: var(--montserrat-font);
+	font-family: "Monteserrat";
 	position: relative;
 	max-width: 80%;
 	margin-right: 0px;
@@ -55,7 +54,7 @@ export const DescriptionText = styled.text`
 	font-size: 13px;
 	line-height: 1.9em;
 	font-weight: 300;
-	letter-spacing: 0.7px;
+	letter-spacing: 2px;
 	color: #1a1919;
 `;
 
@@ -71,19 +70,14 @@ export const Menu = styled.span`
 `;
 
 export const MenuText = styled.text`
-	font-family: playfair-display;
+	font-family: "Sonder";
 	font-weight: 100;
 	font-style: light-weight;
 	color: #1a1919;
+	text-transform: uppercase;
 `;
 
-//to do:
-// - replace <br />
-// - add darkmode
-// - add hover over on menu and hackerone link
-// - look for correct font
-
-export default function Home({allPostsData}) {
+export default function Home() {
 	const name = "Charlie Kroon";
 	const description =
 		"Software Engineer with a background in Journalism";
@@ -113,13 +107,13 @@ export default function Home({allPostsData}) {
 				<Menu>
 					<MenuText>
 						<Link href="/work">
-							WORK
+							Work
 						</Link>{" "}
 						<Link href="/about">
-							ABOUT
+							About
 						</Link>{" "}
 						<Link href="/contact">
-							CONTACT
+							Contact
 						</Link>{" "}
 					</MenuText>
 				</Menu>
