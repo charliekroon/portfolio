@@ -1,4 +1,7 @@
 import Link from "next/link";
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
 import styled from "styled-components";
 
 export const Title = styled.p`
@@ -41,7 +44,8 @@ export const ContainerTwo = styled.span`
 	justify-content: center;
 `;
 
-export default function About() {
+export default function About({posts}) {
+	console.log(posts);
 	const description = "Hi, I am Charlie";
 	return (
 		<>
@@ -52,4 +56,34 @@ export default function About() {
 			</ContainerTwo>
 		</>
 	);
+}
+
+export async function getStaticProps() {
+	// Get files from the posts dir
+	const files = fs.readdirSync(path.join("posts"));
+
+	// Get slug and frontmatter from posts
+	const posts = files.map(filename => {
+		// Create slug
+		const slug = filename.replace(".md", "");
+
+		// Get frontmatter
+		const markdownWithMeta = fs.readFileSync(
+			path.join("posts", filename),
+			"utf-8"
+		);
+
+		const {data: frontmatter} = matter(markdownWithMeta);
+
+		return {
+			slug,
+			frontmatter,
+		};
+	});
+
+	return {
+		props: {
+			posts,
+		},
+	};
 }

@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import styled from "styled-components";
-import { getSortedPostsData } from "../lib/posts";
 
 export const Container = styled.span`
 	display: flex;
@@ -84,7 +83,7 @@ export const MenuText = styled.text`
 // - add hover over on menu and hackerone link
 // - look for correct font
 
-export default function Home({ allPostsData }) {
+export default function Home({allPostsData}) {
 	const name = "Charlie Kroon";
 	const description =
 		"Software Engineer with a background in Journalism";
@@ -98,32 +97,6 @@ export default function Home({ allPostsData }) {
 				<link rel="icon" href="/favicon.ico" />
 			</Head>{" "}
 			<Container>
-				<ul>
-					{allPostsData.map(
-						({
-							id,
-							date,
-							title,
-						}) => (
-							<li
-								key={
-									id
-								}>
-								{
-									title
-								}
-								<br />
-								{
-									id
-								}
-								<br />
-								{
-									date
-								}
-							</li>
-						)
-					)}
-				</ul>
 				<Description>
 					<TitleText>{name}</TitleText>
 					<br />
@@ -153,13 +126,4 @@ export default function Home({ allPostsData }) {
 			</Container>
 		</>
 	);
-}
-
-export async function getStaticProps() {
-	const allPostsData = getSortedPostsData();
-	return {
-		props: {
-			allPostsData,
-		},
-	};
 }
