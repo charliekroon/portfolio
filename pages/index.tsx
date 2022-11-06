@@ -113,15 +113,15 @@ export default function Home() {
 				</Description>
 				<Menu>
 					<MenuText>
+						<Link href="/work">
+							WORK
+						</Link>{" "}
 						<Link href="/about">
 							ABOUT
 						</Link>{" "}
 						<Link href="/contact">
 							CONTACT
 						</Link>{" "}
-						<Link href="/work">
-							WORK
-						</Link>
 					</MenuText>
 				</Menu>
 			</Container>
