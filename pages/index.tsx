@@ -1,6 +1,37 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
+import styled from "styled-components";
+
+export const Container = styled.span`
+	display: flex;
+	min-height: 100vh;
+	padding: 4rem 0;
+	background-color: #eee7e1;
+	gap: 4rem;
+	flex-direction: row;
+	justify-content: center;
+`;
+
+export const Description = styled.span`
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 20%;
+	flex-grow: 1;
+	margin-top: 30%;
+`;
+
+export const Content = styled.span`
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	flex: 1;
+	flex-grow: 1;
+	margin: auto;
+	margin-right: 20%;
+	font-size: 10rem;
+`;
 
 //to do:
 // - replace <br />
@@ -21,13 +52,13 @@ export default function Home() {
 				<title>Charlie Kroon</title>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>{" "}
-			<span className={styles.container}>
-				<span className={styles.description}>
+			<Container>
+				<Description>
 					{name}
 					<br />
 					<br /> {description}
-				</span>
-				<span className={styles.content}>
+				</Description>
+				<Content>
 					<Link href="/about">
 						About
 					</Link>
@@ -35,8 +66,8 @@ export default function Home() {
 						Contact
 					</Link>
 					<Link href="/work">Work</Link>
-				</span>
-			</span>
+				</Content>
+			</Container>
 		</>
 	);
 }
