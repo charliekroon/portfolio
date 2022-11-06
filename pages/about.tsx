@@ -72,15 +72,13 @@ const Button = styled.button`
 	color: #eee7e1;
 	border: 0;
 	max-width: 100px;
-	padding-right: 6px;
-	padding-left: 6px;
-	padding-top: 12px;
-	padding-bottom: 12px;
-	margin: 12px;
+	padding: 6px 12px;
+	margin-top: -4.5%;
+	margin-bottom: 2%;
+	margin-left: 10%;
 	cursor: pointer;
 	border-radius: 12px;
 	font-size: 24px;
-	margin-left: 10%;
 `;
 
 export default function About() {
