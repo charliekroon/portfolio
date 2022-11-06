@@ -2,6 +2,12 @@ import Head from "next/head";
 import Link from "next/link";
 import styled from "styled-components";
 
+export const Text = styled.text`
+	font-family: var(--montserrat_alternates-font);
+	font-weight: 300;
+	font-style: italic;
+`;
+
 export const Container = styled.span`
 	display: flex;
 	min-height: 100vh;
@@ -53,9 +59,11 @@ export default function Home() {
 			</Head>{" "}
 			<Container>
 				<Description>
-					{name}
-					<br />
-					<br /> {description}
+					<Text>
+						{name}
+						<br />
+						<br /> {description}
+					</Text>
 				</Description>
 				<Content>
 					<Link href="/about">
