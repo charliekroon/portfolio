@@ -37,7 +37,7 @@ export default function Contact() {
 				<Text>
 					Send me a message / email.{" "}
 					<br />
-					Follow me on the internet:
+					Follow me on the internet:{" "}
 				</Text>
 			</AboutContainer>
 		</>

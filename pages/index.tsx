@@ -109,11 +109,11 @@ export default function Home() {
 				</Description>
 				<Menu>
 					<MenuText>
-						<Link href="/work">
-							Work
-						</Link>{" "}
 						<Link href="/about">
 							About
+						</Link>{" "}
+						<Link href="/projects">
+							Projects
 						</Link>{" "}
 						<Link href="/contact">
 							Contact

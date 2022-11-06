@@ -16,12 +16,12 @@ export const Text = styled.text`
 	margin-top: -2%;
 	margin-right: 40%;
 `;
-export default function Work() {
+export default function Projects() {
 	return (
 		<>
 			<AboutContainer>
 				<MenuBar />
-				<Title>Work</Title>
+				<Title>Projects</Title>
 				<Text>Whatzzzzup up bitches</Text>
 			</AboutContainer>
 		</>

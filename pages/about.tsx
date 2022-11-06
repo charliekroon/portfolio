@@ -14,7 +14,7 @@ export default function About() {
 		<>
 			<AboutContainer>
 				<MenuBar />
-				<Title>ABOUT</Title>
+				<Title>About</Title>
 				<Byline>{description}</Byline>
 				<Text>
 					{" "}
@@ -26,7 +26,7 @@ export default function About() {
 					an adult I learned that, want
 					I really wanted, was to paid.
 				</Text>
-				<Header>Experience</Header>
+				{/* <Header>Experience</Header>
 				<Text>
 					{" "}
 					<ul>
@@ -39,12 +39,18 @@ export default function About() {
 							Amsterdam
 						</li>
 					</ul>{" "}
-				</Text>
+				</Text> */}
 				<Header>Technical Skills</Header>
 				<Text>
 					Javascript(ES6) / Typescript /
-					Ruby / Ruby on Rails / React /
-					Redux / GraphQL / NextJS /
+					Ruby / Ruby on Rails
+					<br />
+					React / Redux / NextJS
+					<br />
+					Rest API / GraphQL / Backbone
+					<br />
+					TailwindCSS / Styled
+					Components
 				</Text>
 				<Header>Soft Skills</Header>
 				<Text>
