@@ -14,7 +14,7 @@
 	align-items: flex-start;
 	margin-left: 20%;
 	flex-grow: 1;
-	margin-top: 20%;
+	margin-top: 30%;
 }
 
 .content {
@@ -25,6 +25,7 @@
 	flex-grow: 1;
 	margin: auto;
 	margin-right: 20%;
+	font-size: 10rem;
 }
 
 @media (max-width: 600px) {
