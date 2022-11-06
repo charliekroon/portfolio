@@ -11,8 +11,7 @@ export const DescriptionText = styled.text`
 
 export const MenuText = styled.text`
 	font-family: playfair-display;
-	font-weight: 400;
-	display: swap;
+	font-weight: 200;
 `;
 
 export const Container = styled.span`
@@ -29,19 +28,19 @@ export const Description = styled.span`
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	margin-left: 20%;
+	margin-left: 10%;
 	flex-grow: 1;
 	margin-top: 30%;
 `;
 
-export const Content = styled.span`
+export const Menu = styled.span`
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+	align-items: flex-start;
 	flex: 1;
 	flex-grow: 1;
 	margin: auto;
-	margin-right: 20%;
+	margin-right: 10%;
 	font-size: 10rem;
 `;
 
@@ -72,7 +71,7 @@ export default function Home() {
 						<br /> {description}
 					</DescriptionText>
 				</Description>
-				<Content>
+				<Menu>
 					<MenuText>
 						<Link href="/about">
 							ABOUT
@@ -84,7 +83,7 @@ export default function Home() {
 							WORK
 						</Link>
 					</MenuText>
-				</Content>
+				</Menu>
 			</Container>
 		</>
 	);
