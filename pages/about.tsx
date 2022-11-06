@@ -15,12 +15,11 @@ export const Title = styled.p`
 	font-weight: 100;
 	font-style: light-weight;
 	color: #1a1919;
-	font-size: 200px;
+	font-size: 150px;
 	letter-spacing: 3.5px;
 	margin-left: 10%;
 	flex-grow: 1;
 	margin-bottom: 0%;
-	background: blue;
 	margin-top: 10%;
 `;
 
@@ -31,7 +30,6 @@ export const Byline = styled.p`
 	color: #1a1919;
 	font-size: 50px;
 	letter-spacing: 2px;
-	background: red;
 	margin-left: 10%;
 	margin-right: 20%;
 	padding-bottom: 0%;
@@ -52,7 +50,6 @@ export const Text = styled.text`
 	flex-grow: 1;
 	margin-top: 0%;
 	margin-right: 40%;
-	background: yellow;
 `;
 
 export const Header = styled.p`
@@ -62,7 +59,6 @@ export const Header = styled.p`
 	color: #1a1919;
 	font-size: 28px;
 	letter-spacing: 2px;
-	background: red;
 	margin-left: 10%;
 	margin-right: 20%;
 	align-items: flex-start;
@@ -100,21 +96,18 @@ export default function About() {
 						</li>
 					</ul>{" "}
 				</Text>
-				<Header>Skills</Header>
+				<Header>Technical Skills</Header>
 				<Text>
-					{" "}
-					<ul>
-						<li>Codaisseur</li>
-						<li>
-							BA News
-							and Media,
-							Hogeschool
-							van
-							Amsterdam
-						</li>
-					</ul>{" "}
+					Javascript(ES6) / Typescript /
+					Ruby / Ruby on Rails / React /
+					Redux / GraphQL / NextJS /
 				</Text>
-				<Link href="/">home</Link>
+				<Header>Soft Skills</Header>
+				<Text>
+					Problem Solving / Presentation
+					Skills / Collaboration /
+					Goal-Oriented
+				</Text>
 			</AboutContainer>
 		</>
 	);
