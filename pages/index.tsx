@@ -2,6 +2,13 @@ import Head from "next/head";
 import Link from "next/link";
 import styled from "styled-components";
 
+const TestFont = styled.h1`
+	font-family: "Rubik", sans-serif;
+	font-weight: bold;
+	color: green;
+	font-size: 3rem;
+`;
+
 export const Container = styled.span`
 	display: flex;
 	min-height: 100vh;
@@ -98,7 +105,7 @@ export default function Home({allPostsData}) {
 			</Head>{" "}
 			<Container>
 				<Description>
-					<TitleText>{name}</TitleText>
+					<TestFont>{name}</TestFont>
 					<br />
 					<DescriptionText>
 						{description}
