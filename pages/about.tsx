@@ -49,7 +49,9 @@ export const Text = styled.text`
 	display: grid;
 	margin-left: 10%;
 	flex-grow: 1;
-	margin-top: 5%;
+	margin-top: 0%;
+	margin-right: 40%;
+
 	background: yellow;
 `;
 
