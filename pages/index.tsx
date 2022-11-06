@@ -77,12 +77,6 @@ export const MenuText = styled.text`
 	text-transform: uppercase;
 `;
 
-//to do:
-// - replace <br />
-// - add darkmode
-// - add hover over on menu and hackerone link
-// - look for correct font
-
 export default function Home() {
 	const name = "Charlie Kroon";
 	const description =

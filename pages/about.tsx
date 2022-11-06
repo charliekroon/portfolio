@@ -65,6 +65,24 @@ export const Header = styled.p`
 	text-transform: uppercase;
 `;
 
+const Button = styled.button`
+	font-family: "Sonder";
+	background-color: #1a1919;
+	color: #eee7e1;
+	border: 0;
+	max-width: 100px;
+	padding-right: 6px;
+	padding-left: 6px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+
+	margin: 12px;
+	cursor: pointer;
+	border-radius: 12px;
+	font-size: 24px;
+	margin-left: 10%;
+`;
+
 export default function About() {
 	const description = "Hi, I am Charlie";
 	return (
@@ -108,6 +126,7 @@ export default function About() {
 					Skills / Collaboration /
 					Goal-Oriented
 				</Text>
+				<Button>My CV</Button>
 			</AboutContainer>
 		</>
 	);
