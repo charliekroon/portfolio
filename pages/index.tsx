@@ -2,11 +2,17 @@ import Head from "next/head";
 import Link from "next/link";
 import styled from "styled-components";
 
-export const Text = styled.text`
+export const DescriptionText = styled.text`
 	font-family: var(--montserrat-font);
 	font-weight: 100;
 	display: swap;
 	font-style: extra-light;
+`;
+
+export const MenuText = styled.text`
+	font-family: playfair-display;
+	font-weight: 400;
+	display: swap;
 `;
 
 export const Container = styled.span`
@@ -60,20 +66,24 @@ export default function Home() {
 			</Head>{" "}
 			<Container>
 				<Description>
-					<Text>
+					<DescriptionText>
 						{name}
 						<br />
 						<br /> {description}
-					</Text>
+					</DescriptionText>
 				</Description>
 				<Content>
-					<Link href="/about">
-						About
-					</Link>
-					<Link href="/contact">
-						Contact
-					</Link>
-					<Link href="/work">Work</Link>
+					<MenuText>
+						<Link href="/about">
+							ABOUT
+						</Link>{" "}
+						<Link href="/contact">
+							CONTACT
+						</Link>{" "}
+						<Link href="/work">
+							WORK
+						</Link>
+					</MenuText>
 				</Content>
 			</Container>
 		</>
