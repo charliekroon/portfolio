@@ -1,14 +1,14 @@
-import styles from "../styles/About.module.css";
-import Link from "next/link";
+import MenuBar from "../components/MenuBar";
+import {AboutContainer, Title, Text} from "./background";
 
 export default function Contact() {
 	return (
 		<>
-			<title>Contact</title>
-			<div>
-				<h1>Contact!</h1>
-				<Link href="/">home</Link>
-			</div>
+			<AboutContainer>
+				<MenuBar />
+				<Title>Contact</Title>
+				<Text>Send me a text!</Text>
+			</AboutContainer>
 		</>
 	);
 }

@@ -1,14 +1,14 @@
-import styles from "../styles/About.module.css";
-import Link from "next/link";
+import MenuBar from "../components/MenuBar";
+import {AboutContainer, Title, Text} from "./background";
 
 export default function Work() {
 	return (
 		<>
-			<title>Work</title>
-			<div>
-				<h1>Work!</h1>
-				<Link href="/">home</Link>
-			</div>
+			<AboutContainer>
+				<MenuBar />
+				<Title>Work</Title>
+				<Text>Whatzzzzup up bitches</Text>
+			</AboutContainer>
 		</>
 	);
 }
