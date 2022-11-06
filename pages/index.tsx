@@ -67,6 +67,9 @@ export const Menu = styled.span`
 	margin-right: 15%;
 	margin-left: 2%;
 	font-size: 10rem;
+	--offset: 20vw;
+	width: fit-content;
+	animation: marquee 5s linear infinite;
 `;
 
 export const MenuText = styled.text`

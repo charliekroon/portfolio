@@ -1,10 +1,10 @@
-import Link from "next/link";
 import styled from "styled-components";
 import MenuBar from "../components/MenuBar";
+import Link from "next/link";
 
 export const AboutContainer = styled.div`
 	min-height: 100vh;
-	background-color: #eee7e1;
+	background: #eee7e1;
 	display: flex;
 	flex-flow: wrap;
 	flex-direction: column;
@@ -86,9 +86,9 @@ export default function About() {
 	const description = "Hi, I am Charlie";
 	return (
 		<>
-			<MenuBar />
-
 			<AboutContainer>
+				<MenuBar />
+
 				<Title>ABOUT</Title>
 				<Byline>{description}</Byline>
 				<Text>
