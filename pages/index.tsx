@@ -7,7 +7,10 @@ export default function Home() {
 	return (
 		<>
 			<span className={styles.container}>
-				CHARLITA!
+				<span className={styles.description}>
+					{" "}
+					CHARLITA!
+				</span>
 				<span className={styles.content}>
 					<Link href="/about">
 						About
