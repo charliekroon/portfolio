@@ -1,8 +1,13 @@
 import Link from "next/link";
-import fs from "fs";
-import path from "path";
-import matter from "gray-matter";
 import styled from "styled-components";
+
+export const AboutContainer = styled.div`
+	min-height: 100vh;
+	background-color: #eee7e1;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+`;
 
 export const Title = styled.p`
 	font-family: Grandslang roman;
@@ -10,80 +15,63 @@ export const Title = styled.p`
 	font-style: light-weight;
 	color: #1a1919;
 	font-size: 200px;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	flex: 1;
-	margin-left: 10%;
-	margin-top: 5%;
-	margin-bottom: -20px;
 	letter-spacing: 3.5px;
+	margin-left: 10%;
+	flex-grow: 1;
+	margin-bottom: 0%;
+	background: blue;
+	margin-top: 10%;
 `;
 
-export const Hi = styled.p`
+export const Byline = styled.p`
 	font-family: Grandslang roman;
 	font-weight: 50;
 	font-style: light-weight;
 	color: #1a1919;
 	font-size: 50px;
-	display: flex;
-	align-items: flex-start;
-	flex: 1;
-	margin-left: 10%;
-	margin-top: -20%;
 	letter-spacing: 2px;
+	background: red;
+	margin-left: 10%;
+	margin-right: 20%;
+	padding-bottom: 0%;
+	align-items: flex-start;
+	margin-top: -17%;
 `;
 
-export const ContainerTwo = styled.span`
-	display: flex;
-	min-height: 100vh;
-	padding: 4rem 0;
-	background-color: #eee7e1;
-	gap: 4rem;
-	flex-direction: column;
-	justify-content: center;
+export const Text = styled.text`
+	font-family: var(--montserrat-font);
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 15px;
+	max-width: 80%;
+	color: #1a1919;
+	line-height: 1.9em;
+	display: grid;
+	margin-left: 10%;
+	flex-grow: 1;
+	margin-top: 5%;
+	background: yellow;
 `;
 
-export default function About({posts}) {
-	console.log(posts);
+export default function About() {
 	const description = "Hi, I am Charlie";
 	return (
 		<>
-			<ContainerTwo>
+			<AboutContainer>
 				<Title>About</Title>
-				<Hi>{description}</Hi>
+				<Byline>{description}</Byline>
+				<Text>
+					{" "}
+					I am a software engineer, with
+					a background in Journalism,
+					Content Marketing and
+					Literature. As a teenager I
+					wanted to become a writer. As
+					an adult I learned that, want
+					I really wanted, was to paid.
+				</Text>
 				<Link href="/">home</Link>
-			</ContainerTwo>
+			</AboutContainer>
 		</>
 	);
-}
-
-export async function getStaticProps() {
-	// Get files from the posts dir
-	const files = fs.readdirSync(path.join("posts"));
-
-	// Get slug and frontmatter from posts
-	const posts = files.map(filename => {
-		// Create slug
-		const slug = filename.replace(".md", "");
-
-		// Get frontmatter
-		const markdownWithMeta = fs.readFileSync(
-			path.join("posts", filename),
-			"utf-8"
-		);
-
-		const {data: frontmatter} = matter(markdownWithMeta);
-
-		return {
-			slug,
-			frontmatter,
-		};
-	});
-
-	return {
-		props: {
-			posts,
-		},
-	};
 }
