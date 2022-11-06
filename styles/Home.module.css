@@ -3,12 +3,15 @@
 	min-height: 100vh;
 	padding: 4rem 0;
 	background-color: beige;
-	gap: 1rem;
+	gap: 4rem;
 }
 
 .content {
 	display: flex;
 	flex-direction: column;
+	align-items: flex-start;
+	flex: 1;
+	flex-grow: 1;
 }
 
 @media (max-width: 600px) {

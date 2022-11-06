@@ -6,9 +6,9 @@ import Link from "next/link";
 export default function Home() {
 	return (
 		<>
-			<div className={styles.container}>
+			<span className={styles.container}>
 				CHARLITA!
-				<div className={styles.content}>
+				<span className={styles.content}>
 					<Link href="/about">
 						About
 					</Link>
@@ -16,8 +16,8 @@ export default function Home() {
 						Contact
 					</Link>
 					<Link href="/work">Work</Link>
-				</div>
-			</div>
+				</span>
+			</span>
 		</>
 	);
 }
