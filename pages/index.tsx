@@ -79,10 +79,9 @@ export const MenuText = styled.text`
 
 //to do:
 // - replace <br />
-// - replace font
-// - modify description
-// - add link to hackerone
-// - add nightmode
+// - add darkmode
+// - add hover over on menu and hackerone link
+// - look for correct font
 
 export default function Home() {
 	const name = "Charlie Kroon";
