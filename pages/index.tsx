@@ -3,9 +3,10 @@ import Link from "next/link";
 import styled from "styled-components";
 
 export const Text = styled.text`
-	font-family: var(--montserrat_alternates-font);
-	font-weight: 300;
-	font-style: italic;
+	font-family: var(--montserrat-font);
+	font-weight: 100;
+	display: swap;
+	font-style: extra-light;
 `;
 
 export const Container = styled.span`
