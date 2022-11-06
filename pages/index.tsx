@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Link from "next/link";
 
@@ -7,13 +6,14 @@ import Link from "next/link";
 // - replace <br />
 // - replace css by styledcomponents
 // - replace font
-// - add head
+// - modify description
+// - add link to hackerone
 
 export default function Home() {
 	const charlie = "Charlie Kroon";
 	const name = charlie.toUpperCase();
 	const description =
-		"Software Engineer with a background in Journalism";
+		"Software Engineer with a background in Journalism. Currently working as a Software Engineer at HackerOne";
 
 	return (
 		<>
@@ -25,8 +25,7 @@ export default function Home() {
 				<span className={styles.description}>
 					{name}
 					<br />
-					<br />
-					{description}
+					<br /> {description}
 				</span>
 				<span className={styles.content}>
 					<Link href="/about">
