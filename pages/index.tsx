@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import Link from "next/link";
 import styled from "styled-components";
 
@@ -35,10 +34,10 @@ export const Content = styled.span`
 
 //to do:
 // - replace <br />
-// - replace css by styledcomponents
 // - replace font
 // - modify description
 // - add link to hackerone
+// - add nightmode
 
 export default function Home() {
 	const charlie = "Charlie Kroon";
