@@ -34,7 +34,7 @@ export const Byline = styled.p`
 	margin-right: 20%;
 	padding-bottom: 0%;
 	align-items: flex-start;
-	margin-top: -5%;
+	margin-top: -7%;
 `;
 
 export const Text = styled.text`
@@ -48,7 +48,7 @@ export const Text = styled.text`
 	display: grid;
 	margin-left: 10%;
 	flex-grow: 1;
-	margin-top: 0%;
+	margin-top: -2%;
 	margin-right: 40%;
 `;
 
@@ -63,6 +63,7 @@ export const Header = styled.p`
 	margin-right: 20%;
 	align-items: flex-start;
 	text-transform: uppercase;
+	margin-top: -5%;
 `;
 
 const Button = styled.button`
@@ -75,7 +76,6 @@ const Button = styled.button`
 	padding-left: 6px;
 	padding-top: 12px;
 	padding-bottom: 12px;
-
 	margin: 12px;
 	cursor: pointer;
 	border-radius: 12px;
