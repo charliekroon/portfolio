@@ -1,5 +1,8 @@
 ### To do:
 
+- add loading component
+- api blogs medium
+
 #### About Page
 
 - replace <br />
