@@ -22,16 +22,19 @@ export const Text = styled.span`
 `;
 
 export const TitleText = styled.text`
-	font-family: "Monteserrat";
+	font-family: "Montserrat-Regular";
 	font-weight: 500;
 	letter-spacing: 2px;
 	text-align: left;
 	line-height: 1.75em;
 	margin-bottom: 0vh;
+	margin-top: -25px;
 	font-size: 15px;
 	max-width: 80%;
 	position: relative;
+	text-transform: uppercase;
 	color: #1a1919;
+	white-space: nowrap;
 `;
 
 export const Description = styled.span`
@@ -45,17 +48,19 @@ export const Description = styled.span`
 `;
 
 export const DescriptionText = styled.text`
-	font-family: "Monteserrat";
-	position: relative;
+	font-family: "Montserrat-Light";
+	font-weight: 400;
+	font-size: 13px;
 	max-width: 80%;
+	line-height: 1.9em;
+	margin-top: -20px;
 	margin-right: 0px;
 	margin-left: 0px;
-	font-family: Montserrat, sans-serif;
-	font-size: 13px;
 	line-height: 1.9em;
-	font-weight: 300;
-	letter-spacing: 2px;
+	letter-spacing: 0.5px;
+	transform-style: preserve-3d;
 	color: #1a1919;
+	white-space: nowrap;
 `;
 
 export const Menu = styled.span`
@@ -88,7 +93,7 @@ export const MenuText = styled.text`
 export default function Home() {
 	const name = "Charlie Kroon";
 	const description =
-		"Software Engineer with a background in Journalism";
+		"Software Engineer wiadadsfsdth a background in Journalism";
 
 	const currently = "Currently working at";
 

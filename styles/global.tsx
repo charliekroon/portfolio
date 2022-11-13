@@ -47,17 +47,21 @@ export const Header = styled.p`
 	margin-right: 20%;
 	align-items: flex-start;
 	text-transform: uppercase;
-	margin-top: -8%;
+	margin-top: -10%;
+`;
+
+export const StandardText = styled.text`
+	font-family: "Montserrat-Light";
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	max-width: 80%;
+	font-size: 13px;
+	line-height: 1.9em;
+	color: #1a1919;
 `;
 
 export const Text = styled.text`
-	font-family: "Monteserrat";
-	font-weight: 300;
 	letter-spacing: 1px;
-	font-size: 15px;
-	max-width: 80%;
-	color: #1a1919;
-	line-height: 1.9em;
 	display: grid;
 	margin-left: 10%;
 	flex-grow: 1;

@@ -1,9 +1,9 @@
 import MenuBar from "../components/MenuBar";
-import {AboutContainer} from "../styles/global";
+import {AboutContainer, StandardText} from "../styles/global";
 import styled from "styled-components";
 
 export const Text = styled.text`
-	font-family: "Monteserrat";
+	font-family: "Montserrat-Light";
 	font-weight: 300;
 	letter-spacing: 1px;
 	font-size: 15px;
@@ -35,9 +35,12 @@ export default function Contact() {
 				<MenuBar />
 				<Title>Hey!</Title>
 				<Text>
-					Send me a message / email.{" "}
-					<br />
-					Follow me on the internet:{" "}
+					<StandardText>
+						Send me a message /
+						email. <br />
+						Follow me on the
+						internet:{" "}
+					</StandardText>
 				</Text>
 			</AboutContainer>
 		</>

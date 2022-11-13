@@ -7,15 +7,31 @@ body {
 @font-face {
 	font-family: "Sonder";
 	src: url("../fonts/SonderVpDemo-jE37l.ttf");
-	font-weight: normal;
-	font-style: normal;
 }
 
 @font-face {
-	font-family: "Monteserrat";
+	font-family: "Montserrat-Alternates-Light";
 	src: url("../fonts/Montserrat_Alternates/MontserratAlternates-Light.ttf");
-	font-weight: light;
-	font-style: normal;
+}
+
+@font-face {
+	font-family: "Montserrat-Regular";
+	src: url("../fonts/Montserrat/static/Montserrat-Regular.ttf");
+}
+
+@font-face {
+	font-family: "Montserrat-Light";
+	src: url("../fonts/Montserrat/static/Montserrat-Light.ttf");
+}
+
+@font-face {
+	font-family: "Montserrat-ExtraLight";
+	src: url("../fonts/Montserrat/static/Montserrat-ExtraLight.ttf");
+}
+
+@font-face {
+	font-family: "Montserrat-Bold";
+	src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
 }
 
 /* @font-face {
