@@ -1,5 +1,5 @@
 import MenuBar from "../components/MenuBar";
-import {AboutContainer} from "./background";
+import {AboutContainer} from "../styles/global";
 import styled from "styled-components";
 
 export const Text = styled.text`

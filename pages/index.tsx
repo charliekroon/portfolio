@@ -74,10 +74,15 @@ export const Menu = styled.span`
 
 export const MenuText = styled.text`
 	font-family: "Sonder";
-	font-weight: 100;
 	font-style: light-weight;
 	color: #1a1919;
 	text-transform: uppercase;
+	transition: 3.5s;
+	&:hover {
+		transition: 0.5s;
+		margin-left: 50px;
+		font-style: italic;
+	}
 `;
 
 export default function Home() {
@@ -112,9 +117,13 @@ export default function Home() {
 						<Link href="/about">
 							About
 						</Link>{" "}
+					</MenuText>
+					<MenuText>
 						<Link href="/projects">
 							Projects
 						</Link>{" "}
+					</MenuText>
+					<MenuText>
 						<Link href="/contact">
 							Contact
 						</Link>{" "}

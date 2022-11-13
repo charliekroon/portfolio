@@ -6,7 +6,7 @@ import {
 	Text,
 	Header,
 	Button,
-} from "./background";
+} from "../styles/global";
 
 export default function About() {
 	const description = "Hi, I am Charlie";

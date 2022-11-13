@@ -7,6 +7,8 @@
 
 - replace <br />
 - add hover over on menu and hackerone link
+- open hackerone link in seperate tab
+- replace PDF
 
 #### Home Page
 
@@ -23,3 +25,4 @@
 
 - add cursor
 - add github icon
+- darkmode
