@@ -26,28 +26,19 @@ export default function About() {
 					an adult I learned that, want
 					I really wanted, was to paid.
 				</Text>
-				{/* <Header>Experience</Header>
-				<Text>
-					{" "}
-					<ul>
-						<li>Codaisseur</li>
-						<li>
-							BA News
-							and Media,
-							Hogeschool
-							van
-							Amsterdam
-						</li>
-					</ul>{" "}
-				</Text> */}
-				<Header>Technical Skills</Header>
+				<Header>
+					Languages and Technical Skills
+				</Header>
 				<Text>
 					Javascript(ES6) / Typescript /
-					Ruby / Ruby on Rails
+					Ruby / SQL / CSS
 					<br />
-					React / Redux / NextJS
+					NodeJS / ReactJS / React Redux
+					/ Ruby on Rails / NextJS /
+					NestJS / ElasticSearch
 					<br />
-					Rest API / GraphQL / Backbone
+					GraphQL / Backbone/ Rest API /
+					Express / PostgreSQL / Knex.js
 					<br />
 					TailwindCSS / Styled
 					Components

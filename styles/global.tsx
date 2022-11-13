@@ -33,22 +33,7 @@ export const Byline = styled.p`
 	margin-right: 20%;
 	padding-bottom: 0%;
 	align-items: flex-start;
-	margin-top: -7%;
-`;
-
-export const Text = styled.text`
-	font-family: "Monteserrat";
-	font-weight: 300;
-	letter-spacing: 1px;
-	font-size: 15px;
-	max-width: 80%;
-	color: #1a1919;
-	line-height: 1.9em;
-	display: grid;
-	margin-left: 10%;
-	flex-grow: 1;
-	margin-top: -2%;
-	margin-right: 40%;
+	margin-top: -11.5%;
 `;
 
 export const Header = styled.p`
@@ -62,7 +47,22 @@ export const Header = styled.p`
 	margin-right: 20%;
 	align-items: flex-start;
 	text-transform: uppercase;
-	margin-top: -5%;
+	margin-top: -8%;
+`;
+
+export const Text = styled.text`
+	font-family: "Monteserrat";
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 15px;
+	max-width: 80%;
+	color: #1a1919;
+	line-height: 1.9em;
+	display: grid;
+	margin-left: 10%;
+	flex-grow: 1;
+	margin-top: -2.5%;
+	margin-right: 40%;
 `;
 
 export const Button = styled.button`
@@ -70,12 +70,18 @@ export const Button = styled.button`
 	background-color: #1a1919;
 	color: #eee7e1;
 	border: 0;
-	max-width: 100px;
-	padding: 6px 12px;
-	margin-top: -4.5%;
-	margin-bottom: 2%;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+	max-width: 500px;
+	padding: 10px 32px;
+	margin-top: -8%;
 	margin-left: 10%;
 	cursor: pointer;
 	border-radius: 12px;
 	font-size: 24px;
+	&:hover {
+		transition: 0s;
+		font-style: italic;
+	}
 `;
