@@ -58,7 +58,12 @@ export default function About() {
 					Skills / Collaboration /
 					Goal-Oriented
 				</Text>
-				<Button>My CV</Button>
+				<a
+					href="https://pdfhost.io/v/G4J~pCV6v_CK_Resume_2022"
+					target="_blank"
+					rel="noopener noreferrer">
+					<Button>My CV</Button>
+				</a>
 			</AboutContainer>
 		</>
 	);
