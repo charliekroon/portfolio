@@ -90,6 +90,17 @@ export const MenuText = styled.text`
 	}
 `;
 
+export const Linkje = styled.text`
+	left: 0;
+
+	transform: scaleX(0);
+	&:hover {
+		color: #efefef;
+		box-sizing: border-box;
+		text-shadow: 1px 1px 0;
+	}
+`;
+
 export default function Home() {
 	const name = "Charlie Kroon";
 	const description =
@@ -112,9 +123,11 @@ export default function Home() {
 						<br />
 						<br />
 						{currently}{" "}
-						<Link href="https://hackerone.com">
-							HackerOne
-						</Link>
+						<Linkje>
+							<a href="https://hackerone.com">
+								HackerOne
+							</a>
+						</Linkje>
 					</DescriptionText>
 				</Description>
 				<Menu>

@@ -36,8 +36,10 @@ export default function Contact() {
 				<Title>Hey!</Title>
 				<Text>
 					<StandardText>
-						Send me a message /
-						email. <br />
+						Send me a message or
+						shoot me an email on
+						charlotkroon@gmail.com{" "}
+						<br />
 						Follow me on the
 						internet:{" "}
 					</StandardText>

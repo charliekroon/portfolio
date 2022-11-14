@@ -71,8 +71,6 @@ export const Text = styled.text`
 
 export const Button = styled.button`
 	font-family: "Sonder";
-	background-color: #1a1919;
-	color: #eee7e1;
 	border: 0;
 	display: flex;
 	flex-wrap: wrap;
@@ -84,8 +82,11 @@ export const Button = styled.button`
 	cursor: pointer;
 	border-radius: 12px;
 	font-size: 24px;
+	color: #eee7e1;
+	background-color: black;
+
 	&:hover {
-		transition: 0s;
-		font-style: italic;
+		animation: pulse 1s;
+		background-color: hotpink;
 	}
 `;
