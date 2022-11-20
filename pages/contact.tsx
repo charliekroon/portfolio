@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
 
-export const Text = styled.text`
+export const ContactText = styled.text`
 	font-family: "Montserrat-Light";
 	font-weight: 300;
 	letter-spacing: 1px;
@@ -17,7 +17,7 @@ export const Text = styled.text`
 	margin-right: 40%;
 `;
 
-export const Title = styled.p`
+export const ContactTitle = styled.p`
 	font-family: "Sonder";
 	font-weight: 100;
 	font-style: light-weight;
@@ -40,8 +40,8 @@ export default function Contact() {
 		<>
 			<General>
 				<MenuBar />
-				<Title>Hey!</Title>
-				<Text>
+				<ContactTitle>Hey!</ContactTitle>
+				<ContactText>
 					<StandardText>Send me a message or shoot me an email on charlotkroon@gmail.com or follow me on the internet:</StandardText>
 					<Icon>
 						{" "}
@@ -55,7 +55,7 @@ export default function Contact() {
 							<Image src="/linkedin.svg" height={30} width={30} alt="medium" />
 						</Link>
 					</Icon>
-				</Text>
+				</ContactText>
 			</General>
 		</>
 	);

@@ -1,6 +1,7 @@
 import MenuBar from "../components/MenuBar";
 import {General, StandardText, Title, Header} from "../styles/global";
 import styled from "styled-components";
+import Image from "next/image";
 
 export const ProjectsText = styled.text`
 	font-family: "Montserrat-Light";
@@ -20,8 +21,7 @@ export default function Projects() {
 	return (
 		<>
 			<General>
-				<MenuBar />
-				<Title>Projects</Title>
+				<Title>Work</Title>
 				<Header>Work in Progress</Header>
 				<ProjectsText>
 					<StandardText></StandardText>

@@ -1,7 +1,8 @@
 html,
 body {
-	padding: 0;
 	margin: 0;
+	padding: 0;
+	background-color: #eee7e1;
 }
 
 @font-face {
@@ -34,13 +35,6 @@ body {
 	src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
 }
 
-/* @font-face {
-	font-family: "Rubik";
-	src: url("../fonts/rubik/Rubik-Italic.ttf");
-	font-weight: normal;
-	font-style: italic;
-} */
-
 a {
 	color: inherit;
 	text-decoration: none;
@@ -55,7 +49,7 @@ a {
 		color-scheme: dark;
 	}
 	body {
-		color: white;
+		color: #eee7e1;
 		background: black;
 	}
 }

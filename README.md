@@ -13,8 +13,6 @@
 #### Home Page
 
 - add correct spacing
-- add button to linkedin
-- add darkmode
 - add hover over menu items
 
 #### Menubar
@@ -24,5 +22,4 @@
 #### Styling
 
 - add cursor
-- add github icon
 - darkmode
