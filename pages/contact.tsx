@@ -47,6 +47,9 @@ export default function Contact() {
 						{" "}
 						<Link href="https://github.com/charliekroon">
 							<Image src="/github.svg" height={30} width={30} alt="github" />
+						</Link>{" "}
+						<Link href="https://medium.com/@charliekroon">
+							<Image src="/medium.svg" height={30} width={30} alt="medium" />
 						</Link>
 					</Icon>
 				</Text>
