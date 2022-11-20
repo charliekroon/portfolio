@@ -1,8 +1,8 @@
 import MenuBar from "../components/MenuBar";
-import {AboutContainer, StandardText, Title} from "../styles/global";
+import {General, StandardText, Title, Header} from "../styles/global";
 import styled from "styled-components";
 
-export const Text = styled.text`
+export const ProjectsText = styled.text`
 	font-family: "Montserrat-Light";
 	font-weight: 300;
 	letter-spacing: 1px;
@@ -19,16 +19,14 @@ export const Text = styled.text`
 export default function Projects() {
 	return (
 		<>
-			<AboutContainer>
+			<General>
 				<MenuBar />
 				<Title>Projects</Title>
-				<Text>
-					<StandardText>
-						Whatzzzzup up
-						bitches
-					</StandardText>
-				</Text>
-			</AboutContainer>
+				<Header>Work in Progress</Header>
+				<ProjectsText>
+					<StandardText></StandardText>
+				</ProjectsText>
+			</General>
 		</>
 	);
 }

@@ -1,6 +1,8 @@
 import MenuBar from "../components/MenuBar";
-import {AboutContainer, StandardText} from "../styles/global";
+import {General, StandardText} from "../styles/global";
 import styled from "styled-components";
+import Image from "next/image";
+import Link from "next/link";
 
 export const Text = styled.text`
 	font-family: "Montserrat-Light";
@@ -28,23 +30,27 @@ export const Title = styled.p`
 	margin-top: 10%;
 `;
 
+export const Icon = styled.span`
+	align-items: center;
+	margin-top: -30%;
+`;
+
 export default function Contact() {
 	return (
 		<>
-			<AboutContainer>
+			<General>
 				<MenuBar />
 				<Title>Hey!</Title>
 				<Text>
-					<StandardText>
-						Send me a message or
-						shoot me an email on
-						charlotkroon@gmail.com{" "}
-						<br />
-						Follow me on the
-						internet:{" "}
-					</StandardText>
+					<StandardText>Send me a message or shoot me an email on charlotkroon@gmail.com or follow me on the internet:</StandardText>
+					<Icon>
+						{" "}
+						<Link href="https://github.com/charliekroon">
+							<Image src="/github.svg" height={30} width={30} alt="github" />
+						</Link>
+					</Icon>
 				</Text>
-			</AboutContainer>
+			</General>
 		</>
 	);
 }

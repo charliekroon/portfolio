@@ -1,11 +1,11 @@
 import MenuBar from "../components/MenuBar";
-import {AboutContainer, Title, Byline, Text, StandardText, TechSkills, Header, Button} from "../styles/global";
+import {General, Title, Byline, Text, StandardText, TechSkills, Header, Button} from "../styles/global";
 
 export default function About() {
 	const description = "Hi, I am Charlie";
 	return (
 		<>
-			<AboutContainer>
+			<General>
 				<MenuBar />
 				<Title>About</Title>
 				<Byline>{description}</Byline>
@@ -33,7 +33,7 @@ export default function About() {
 				<a href="https://drive.google.com/file/d/1aBq29AbTXdve04w46eCjTom_Ze0XrkWz/view?usp=sharing" target="_blank" rel="noopener noreferrer">
 					<Button>My CV</Button>
 				</a>
-			</AboutContainer>
+			</General>
 		</>
 	);
 }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutContainer = styled.div`
+export const General = styled.div`
 	min-height: 100vh;
 	background: #eee7e1;
 	display: flex;
@@ -95,9 +95,8 @@ export const Button = styled.button`
 	font-size: 24px;
 	color: #eee7e1;
 	background-color: black;
-
-	&:hover {
-		animation: pulse 1s;
-		background-color: hotpink;
+	&:hover,
+	:active {
+		animation: pulsate-bck 1s ease-in-out both;
 	}
 `;
