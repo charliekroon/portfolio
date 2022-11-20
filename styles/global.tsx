@@ -47,7 +47,7 @@ export const Header = styled.p`
 	margin-right: 20%;
 	align-items: flex-start;
 	text-transform: uppercase;
-	margin-top: -10%;
+	margin-top: -0.5%;
 `;
 
 export const StandardText = styled.text`
@@ -65,14 +65,14 @@ export const Text = styled.text`
 	display: grid;
 	margin-left: 10%;
 	flex-grow: 1;
-	margin-top: 10%;
+	margin-top: -2%;
 	margin-right: 40%;
 `;
 
 export const TechSkills = styled.text`
 	font-family: "Montserrat-Light";
 	font-weight: 400;
-	max-width: 80%;
+	max-width: 90%;
 	font-size: 13px;
 	line-height: 1.9em;
 	letter-spacing: 0.5px;
@@ -88,7 +88,7 @@ export const Button = styled.button`
 	text-align: center;
 	max-width: 500px;
 	padding: 10px 32px;
-	margin-top: -8%;
+	margin-top: -2%;
 	margin-left: 10%;
 	cursor: pointer;
 	border-radius: 12px;

@@ -92,19 +92,15 @@ export const MenuText = styled.text`
 
 export const Linkje = styled.text`
 	left: 0;
-
 	transform: scaleX(0);
 	&:hover {
-		color: #efefef;
-		box-sizing: border-box;
-		text-shadow: 1px 1px 0;
+		animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 	}
 `;
 
 export default function Home() {
 	const name = "Charlie Kroon";
-	const description =
-		"Software Engineer wiadadsfsdth a background in Journalism";
+	const description = "Software Engineer with a background in Journalism";
 
 	const currently = "Currently working at";
 
@@ -124,27 +120,19 @@ export default function Home() {
 						<br />
 						{currently}{" "}
 						<Linkje>
-							<a href="https://hackerone.com">
-								HackerOne
-							</a>
+							<a href="https://hackerone.com">HackerOne</a>
 						</Linkje>
 					</DescriptionText>
 				</Description>
 				<Menu>
 					<MenuText>
-						<Link href="/about">
-							About
-						</Link>{" "}
+						<Link href="/about">About</Link>{" "}
 					</MenuText>
 					<MenuText>
-						<Link href="/projects">
-							Projects
-						</Link>{" "}
+						<Link href="/projects">Projects</Link>{" "}
 					</MenuText>
 					<MenuText>
-						<Link href="/contact">
-							Contact
-						</Link>{" "}
+						<Link href="/contact">Contact</Link>{" "}
 					</MenuText>
 				</Menu>
 			</Container>
