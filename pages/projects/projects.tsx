@@ -17,12 +17,26 @@ export const ProjectsText = styled.text`
 	margin-top: -2%;
 	margin-right: 40%;
 `;
+
+const Headertje = styled.p`
+	font-family: "Sonder";
+	font-weight: 50;
+	font-style: light-weight;
+	color: #1a1919;
+	font-size: 28px;
+	letter-spacing: 2px;
+	margin-left: 10%;
+	margin-right: 20%;
+	align-items: flex-start;
+	margin-top: -30%;
+`;
 export default function Projects() {
 	return (
 		<>
+			<MenuBar />
 			<General>
 				<Title>Work</Title>
-				<Header>Work in Progress</Header>
+				<Headertje>Work in Progress</Headertje>
 				<ProjectsText>
 					<StandardText></StandardText>
 				</ProjectsText>
