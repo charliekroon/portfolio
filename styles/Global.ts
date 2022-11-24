@@ -100,3 +100,11 @@ export const Button = styled.button`
 		animation: pulsate-bck 1s ease-in-out both;
 	}
 `;
+
+export const Container = styled.span`
+	display: flex;
+	min-height: 100vh;
+	flex-direction: row;
+	justify-content: center;
+	overflow: hidden;
+`;
