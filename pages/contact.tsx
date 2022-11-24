@@ -1,6 +1,6 @@
-import MenuBar from "../../components/MenuBar";
-import {General, StandardText} from "../../styles/Global";
-import {ContactTitle, ContactText, Icon} from "./contact.styles";
+import MenuBar from "../components/MenuBar";
+import {General, StandardText} from "../styles/Global";
+import {ContactTitle, ContactText, Icon} from "../styles/contact.styles";
 import Image from "next/image";
 import Link from "next/link";
 

@@ -1,10 +1,7 @@
 import Link from "next/link";
-import {useRouter} from "next/router";
-import {Description, TitleText, DescriptionText, Linkje, Menu, MenuText} from "./home.styles";
+import {Description, TitleText, DescriptionText, Linkje, Menu, MenuText} from "../styles/home.styles";
 
 export default function Home() {
-	const router = useRouter();
-
 	const name = "Charlie Kroon";
 	const description = "Software Engineer with a background in Journalism";
 	const currently = "Currently working at";
@@ -26,7 +23,7 @@ export default function Home() {
 			</Description>
 			<Menu>
 				<MenuText>
-					<Link href="about">About</Link>{" "}
+					<Link href="/about">About</Link>{" "}
 				</MenuText>
 				<MenuText>
 					<Link href="/work">Work</Link>{" "}
