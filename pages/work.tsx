@@ -1,28 +1,20 @@
 import MenuBar from "../components/MenuBar";
 import {General, StandardText, Title, Text} from "../styles/Global";
-import {Headertje, ProjectsText} from "../styles/projects.styles";
 import React, {useState, useEffect} from "react";
-import {Blogje} from "./blogje";
 import {getBlogs} from "./api/blogs";
+import {Blogje} from "./blogje";
 
 export default function Projects() {
-	const [blogs, setBlogs] = useState<any[]>([]);
+	const [blogs, setBlogs] = useState<Blogje[]>([]);
 
 	useEffect(() => {
-		getAllBlogjes();
+		getAllBlogs();
 	}, []);
 
-	const getAllBlogjes = async () => {
-		const kutblogs = await getBlogs();
-		return setBlogs(kutblogs);
+	const getAllBlogs = async () => {
+		const allBlogs = await getBlogs();
+		return setBlogs(allBlogs);
 	};
-
-	console.log("TELL ME WHYHYHY?", blogs);
-
-	console.log(
-		"AINT NOTHING BUT A HEARTACHE",
-		blogs.map(i => i.title)
-	);
 
 	const displayBlogjes = blogs.map(i => i.title);
 
