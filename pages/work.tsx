@@ -23,12 +23,6 @@ export default function Projects() {
 	}, []);
 
 	console.log("blogs", blogs);
-	console.log(
-		"blog map",
-		blogs.map(item => {
-			item;
-		})
-	);
 
 	if (error) {
 		return <div>Error: {error}</div>;
@@ -40,7 +34,15 @@ export default function Projects() {
 				<MenuBar />
 				<General>
 					<Title>Work</Title>
-					<>{blogs.map(item => item.title)}</>
+					<>
+						{blogs.map(item => (
+							<>
+								<a href={item.link} target="_blank">
+									{item.title}
+								</a>
+							</>
+						))}
+					</>
 				</General>
 			</>
 		);
