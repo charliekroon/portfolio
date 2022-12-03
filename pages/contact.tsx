@@ -1,4 +1,4 @@
-import MenuBar from "../components/MenuBar";
+import MenuBar from "../src/interfaces/components/MenuBar";
 import {General, StandardText} from "../styles/Global";
 import {ContactTitle, ContactText, Icon} from "../styles/contact.styles";
 import Image from "next/image";

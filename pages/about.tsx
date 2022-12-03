@@ -1,4 +1,4 @@
-import MenuBar from "../components/MenuBar";
+import MenuBar from "../src/interfaces/components/MenuBar";
 import {General, Title, Byline, Text, StandardText, TechSkills, Header, Button} from "../styles/Global";
 
 export default function About() {

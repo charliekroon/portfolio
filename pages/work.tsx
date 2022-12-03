@@ -1,11 +1,11 @@
-import MenuBar from "../components/MenuBar";
+import MenuBar from "../src/interfaces/components/MenuBar";
 import {General, StandardText, Title, Text} from "../styles/Global";
 import React, {useState, useEffect} from "react";
-import {getBlogs} from "./api/blogs";
-import {Blogje} from "./blogje";
+import {getBlogs} from "./api/blogAPI";
+import {Blog} from "../src/interfaces/blog";
 
 export default function Projects() {
-	const [blogs, setBlogs] = useState<Blogje[]>([]);
+	const [blogs, setBlogs] = useState<Blog[]>([]);
 
 	useEffect(() => {
 		getAllBlogs();
