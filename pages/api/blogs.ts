@@ -1,12 +1,14 @@
-import Blogje from "../blogje";
+import {Blogje} from "../blogje";
 
-export const getAllBlogs = (): Promise<Array<Blogje>> => {
-	return fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@charliekroon/")
-		.then(res => res.json())
-		.then(data => {
-			return data;
+export const getBlogs: () => Promise<Array<Blogje>> = async () => {
+	return fetch("https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@charliekroon/", {
+		method: "GET",
+	})
+		.then(res => {
+			return res.json();
 		})
-		.catch(error => {
-			console.error(error);
-		});
+		.then(data => {
+			return data.items;
+		})
+		.catch(error => console.error(error));
 };
