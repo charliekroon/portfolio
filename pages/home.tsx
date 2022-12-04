@@ -15,7 +15,7 @@ export default function Home() {
 					{description}
 					<br />
 					<br />
-					{currently}
+					{currently}{" "}
 					<Linkje>
 						<Link href="https://hackerone.com">HackerOne</Link>
 					</Linkje>

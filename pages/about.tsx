@@ -1,5 +1,6 @@
 import MenuBar from "../src/components/MenuBar";
-import {General, Title, Byline, Text, StandardText, TechSkills, Header, Button} from "../src/styles/Global";
+import {General, Title, Byline, Text, StandardText, Header, Button} from "../src/styles/Global";
+import {TechSkills} from "../src/styles/AboutStyles";
 
 export default function About() {
 	const description = "Hi, I am Charlie";

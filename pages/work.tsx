@@ -1,10 +1,10 @@
 import MenuBar from "../src/components/MenuBar";
-import {General, StandardText, Title, Text} from "../src/styles/Global";
+import {General, Title, Text} from "../src/styles/Global";
 import React, {useState, useEffect} from "react";
 import {getBlogs} from "./api/blogAPI";
 import {Blog} from "../src/interfaces/blog";
 import Link from "next/link";
-import {WorkLink} from "../src/styles/WorkStyles";
+import {WorkLink, ProjectsText, Headertje} from "../src/styles/WorkStyles";
 
 export default function Projects() {
 	const [blogs, setBlogs] = useState<Blog[]>([]);
@@ -32,7 +32,7 @@ export default function Projects() {
 			<General>
 				<Title>Work</Title>
 				<Text>
-					<StandardText>
+					<ProjectsText>
 						{" "}
 						I occasionally write a blog about the things I learned (For example: timezones in JavaScript), things I enjoyed or things that I wish there was a blog about when I was starting out as a Software Engineer. You can read them here:
 						<div> {displayBlogjes}</div>
@@ -48,7 +48,7 @@ export default function Projects() {
 						</div>
 						<br />
 						<div>There are soooo many things I enjoy or want to learn more about, that I often have to pace myself and choose just one thing to focus on at that moment. There was a time I wanted to learn how to create my own NFT contracts. I now am focused on Front End (out of work, during work I am very much FE and BE focused) and in particular creating super coolprettycute design stuff with code.</div>
-					</StandardText>
+					</ProjectsText>
 				</Text>
 			</General>
 		</>
