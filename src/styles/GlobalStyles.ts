@@ -38,6 +38,11 @@ body {
 	src: url("../fonts/Montserrat/static/Montserrat-Bold.ttf");
 }
 
+@font-face {
+	font-family: "Montserrat-ExtraLightItalic";
+	src: url("../fonts/Montserrat_Alternates/MontserratAlternates-ExtraLightItalic.ttf");
+}
+
 a {
 	color: inherit;
 	text-decoration: none;

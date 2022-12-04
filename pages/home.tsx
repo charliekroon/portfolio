@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {Description, TitleText, DescriptionText, Linkje, Menu, MenuText} from "../styles/home.styles";
+import {Description, TitleText, DescriptionText, Linkje, Menu, MenuText} from "../src/styles/HomeStyles";
 
 export default function Home() {
 	const name = "Charlie Kroon";
@@ -15,7 +15,7 @@ export default function Home() {
 					{description}
 					<br />
 					<br />
-					{currently}{" "}
+					{currently}
 					<Linkje>
 						<Link href="https://hackerone.com">HackerOne</Link>
 					</Linkje>

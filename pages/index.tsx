@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Home from "./home";
-import {Container} from "../styles/Global";
+import {Container} from "../src/styles/Global";
 
 export default function Index() {
 	return (
