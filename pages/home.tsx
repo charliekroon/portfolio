@@ -11,10 +11,9 @@ export default function Home() {
 			<Description>
 				<TitleText>{name}</TitleText>
 				<br />
+
+				<DescriptionText>{description}</DescriptionText>
 				<DescriptionText>
-					{description}
-					<br />
-					<br />
 					{currently}{" "}
 					<Linkje>
 						<Link href="https://hackerone.com">HackerOne</Link>

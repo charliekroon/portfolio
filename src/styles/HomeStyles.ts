@@ -30,6 +30,14 @@ export const TitleText = styled.text`
 	text-transform: uppercase;
 	color: #1a1919;
 	white-space: nowrap;
+	${media.mobile} {
+		padding-top: 12%;
+		font-size: 15px;
+		max-width: 100%;
+		display: block;
+		text-align: left;
+		margin-right: 15%;
+	}
 `;
 
 export const Description = styled.span`
@@ -40,6 +48,15 @@ export const Description = styled.span`
 	flex-grow: 1;
 	margin-top: 30%;
 	justify-items: space-between;
+	${media.mobile} {
+		font-size: 15px;
+		margin-top: 30%;
+		display: block;
+		text-align: left;
+		justify-items: space-between;
+		line-height: 1.9em;
+		position: relative;
+	}
 `;
 
 export const DescriptionText = styled.text`
@@ -49,7 +66,7 @@ export const DescriptionText = styled.text`
 	font-size: 13px;
 	max-width: 80%;
 	line-height: 1.9em;
-	margin-top: -20px;
+	margin-top: -5px;
 	margin-right: 0px;
 	margin-left: 0px;
 	line-height: 1.9em;
@@ -58,10 +75,12 @@ export const DescriptionText = styled.text`
 	color: #1a1919;
 	white-space: nowrap;
 	${media.mobile} {
-		font-size: 13px;
 		max-width: 100%;
 		display: block;
 		text-align: left;
+		font-weight: 400;
+		position: relative;
+		margin-top: -1%;
 	}
 `;
 
@@ -78,10 +97,13 @@ export const Menu = styled.span`
 	width: fit-content;
 	animation: marquee 5s linear infinite;
 	${media.mobile} {
-		font-size: 50px;
+		font-size: 16vw;
 		max-width: 100%;
 		display: block;
 		text-align: left;
+		padding-bottom: 10%;
+		margin-left: -160%;
+		margin-right: 15%;
 	}
 `;
 
