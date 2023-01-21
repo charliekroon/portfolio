@@ -11,7 +11,6 @@ export default function Home() {
 			<Description>
 				<TitleText>{name}</TitleText>
 				<br />
-
 				<DescriptionText>{description}</DescriptionText>
 				<DescriptionText>
 					{currently}{" "}

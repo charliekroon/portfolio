@@ -2,8 +2,6 @@ import styled from "styled-components";
 
 export const media = {
 	mobile: "@media(max-width: 844px)",
-	tablet: "@media(max-width: 991px)",
-	desktop: "@media(max-width: 1199px)",
 };
 
 export const Text = styled.span`
@@ -55,7 +53,6 @@ export const Description = styled.span`
 		text-align: left;
 		justify-items: space-between;
 		line-height: 1.9em;
-		position: relative;
 	}
 `;
 
@@ -77,9 +74,7 @@ export const DescriptionText = styled.text`
 	${media.mobile} {
 		max-width: 100%;
 		display: block;
-		text-align: left;
 		font-weight: 400;
-		position: relative;
 		margin-top: -1%;
 	}
 `;
@@ -104,6 +99,9 @@ export const Menu = styled.span`
 		padding-bottom: 10%;
 		margin-left: -160%;
 		margin-right: 15%;
+		&:hover {
+			animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+		}
 	}
 `;
 
