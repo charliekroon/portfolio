@@ -52,6 +52,7 @@ a {
 	box-sizing: border-box;
 }
 
+
 @media 
 	body {
 		color: #eee7e1;

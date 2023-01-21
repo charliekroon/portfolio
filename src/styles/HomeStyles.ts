@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+// const media = {
+// 	mobile: "@media(max-width: 767px",
+// };
+
 export const Text = styled.span`
 	display: flex;
 	flex-direction: column;
@@ -65,6 +69,9 @@ export const Menu = styled.span`
 	--offset: 20vw;
 	width: fit-content;
 	animation: marquee 5s linear infinite;
+	@media (max-width: 600px) {
+		display: none;
+	}
 `;
 
 export const MenuText = styled.text`
