@@ -52,15 +52,11 @@ a {
 	box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
-	}
+@media 
 	body {
 		color: #eee7e1;
 		background: black;
 	}
-}
 
 @keyframes text-blur-out {
 	0% {

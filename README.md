@@ -1,19 +1,13 @@
+To run: npm run dev
+
 ### To do:
 
 - add loading component
-- api blogs medium
 
 #### About Page
 
 - replace <br />
-- add hover over on menu and hackerone link
 - open hackerone link in seperate tab
-- replace PDF
-
-#### Home Page
-
-- add correct spacing
-- add hover over menu items
 
 #### Menubar
 

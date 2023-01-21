@@ -21,7 +21,9 @@ export default function Projects() {
 	const displayBlogjes = blogs.map(blog => (
 		<>
 			<WorkLink>
-				<Link href={blog.link}>{blog.title}</Link>
+				<ul>
+					<Link href={blog.link}>{blog.title}</Link>
+				</ul>
 			</WorkLink>
 		</>
 	));
@@ -34,20 +36,25 @@ export default function Projects() {
 				<Text>
 					<ProjectsText>
 						{" "}
-						I occasionally write a blog about the things I learned (For example: timezones in JavaScript), things I enjoyed or things that I wish there was a blog about when I was starting out as a Software Engineer. You can read them here:
-						<div> {displayBlogjes}</div>
+						I occasionally write a blog about the things I've learned, things I've enjoyed, or topics that I wish I had found when I first started as a software engineer. You can read them here: <div> {displayBlogjes}</div>
 						<br />
 						<div>
-							I build very small side projects, that I created either because I wanted to{" "}
+							I build very small side projects, usually to{" "}
 							<WorkLink>
 								<Link href="https://github.com/charliekroon/projectje">
 									<strong>learn something new</strong>
 								</Link>
 							</WorkLink>
-							, because I thought it was <Link href="https://github.com/charliekroon/spelen-met-css-animations">fun</Link>, or are a thing that I need in my life and can't find elsewhere.{" "}
+							, for{" "}
+							<WorkLink>
+								<Link href="https://github.com/charliekroon/spelen-met-css-animations">
+									<strong>fun</strong>
+								</Link>
+							</WorkLink>
+							, or because it's something I need in my life but can't find elsewhere.{" "}
 						</div>
 						<br />
-						<div>There are soooo many things I enjoy or want to learn more about, that I often have to pace myself and choose just one thing to focus on at that moment. There was a time I wanted to learn how to create my own NFT contracts. I now am focused on Front End (out of work, during work I am very much FE and BE focused) and in particular creating super coolprettycute design stuff with code.</div>
+						<div>There are soooo many things I enjoy or want to learn more about, so I have to pace myself and focus on one thing at a time. For example, I once wanted to learn how to create my own NFT contracts. Currently, I'm focused on front-end development (outside of work, as at work I focus on both front-end and back-end) and in particular, creating coolprettycute design stuff with code.</div>
 					</ProjectsText>
 				</Text>
 			</General>
