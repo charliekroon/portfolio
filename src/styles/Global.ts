@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {media} from "./HomeStyles";
 
 export const General = styled.div`
 	min-height: 100vh;
@@ -7,6 +8,12 @@ export const General = styled.div`
 	flex-flow: wrap;
 	flex-direction: column;
 	gap: 1rem;
+	${media.mobile} {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 100%;
+		flex: 100%;
+	}
 `;
 
 export const Title = styled.p`
@@ -20,6 +27,9 @@ export const Title = styled.p`
 	flex-grow: 1;
 	margin-bottom: 0%;
 	margin-top: 10%;
+	${media.mobile} {
+		font-size: 50px;
+	}
 `;
 
 export const Byline = styled.p`
@@ -34,6 +44,10 @@ export const Byline = styled.p`
 	padding-bottom: 0%;
 	align-items: flex-start;
 	margin-top: -1.5%;
+	${media.mobile} {
+		font-size: 25px;
+		font-family: "Montserrat-Light";
+	}
 `;
 
 export const Header = styled.p`
@@ -58,6 +72,12 @@ export const StandardText = styled.text`
 	font-size: 13px;
 	line-height: 1.9em;
 	color: #1a1919;
+	${media.mobile} {
+		font-size: 13px;
+		max-width: 1000px;
+		letter-spacing: 0px;
+		display: flex-start;
+	}
 `;
 
 export const Text = styled.text`
@@ -67,6 +87,12 @@ export const Text = styled.text`
 	flex-grow: 1;
 	margin-top: -2%;
 	margin-right: 40%;
+	${media.mobile} {
+		font-size: 13px;
+		max-width: 1000px;
+		letter-spacing: 0px;
+		display: flex-start;
+	}
 `;
 
 export const Button = styled.button`
@@ -87,6 +113,12 @@ export const Button = styled.button`
 	&:hover,
 	:active {
 		animation: pulsate-bck 1s ease-in-out both;
+	}
+	${media.mobile} {
+		display: flex;
+		flex-wrap: wrap;
+		max-width: 100%;
+		flex: 100%;
 	}
 `;
 

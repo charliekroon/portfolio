@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
-// const media = {
-// 	mobile: "@media(max-width: 767px",
-// };
+export const media = {
+	mobile: "@media(max-width: 844px)",
+	tablet: "@media(max-width: 991px)",
+	desktop: "@media(max-width: 1199px)",
+};
 
 export const Text = styled.span`
 	display: flex;
@@ -55,6 +57,12 @@ export const DescriptionText = styled.text`
 	transform-style: preserve-3d;
 	color: #1a1919;
 	white-space: nowrap;
+	${media.mobile} {
+		font-size: 13px;
+		max-width: 100%;
+		display: block;
+		text-align: left;
+	}
 `;
 
 export const Menu = styled.span`
@@ -69,8 +77,11 @@ export const Menu = styled.span`
 	--offset: 20vw;
 	width: fit-content;
 	animation: marquee 5s linear infinite;
-	@media (max-width: 600px) {
-		display: none;
+	${media.mobile} {
+		font-size: 50px;
+		max-width: 100%;
+		display: block;
+		text-align: left;
 	}
 `;
 
