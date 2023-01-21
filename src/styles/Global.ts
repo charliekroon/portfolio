@@ -46,7 +46,6 @@ export const Byline = styled.p`
 	margin-top: -1.5%;
 	${media.mobile} {
 		font-size: 25px;
-		font-family: "Montserrat-Light";
 	}
 `;
 

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import {media} from "./HomeStyles";
 
 export const ContactText = styled.text`
 	font-family: "Montserrat-Light";
@@ -11,6 +12,10 @@ export const ContactText = styled.text`
 	margin-left: 10%;
 	flex-grow: 1;
 	margin-right: 40%;
+	${media.mobile} {
+		font-size: 70px;
+		margin-top: -60%;
+	}
 `;
 
 export const ContactTitle = styled.p`
@@ -24,9 +29,16 @@ export const ContactTitle = styled.p`
 	flex-grow: 1;
 	margin-bottom: -30%;
 	margin-top: 10%;
+	${media.mobile} {
+		font-size: 80px;
+		margin-top: 50%;
+	}
 `;
 
 export const Icon = styled.span`
 	align-items: center;
 	margin-top: -30%;
+	${media.mobile} {
+		margin-top: -100%;
+	}
 `;
