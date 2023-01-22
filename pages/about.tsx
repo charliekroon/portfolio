@@ -1,15 +1,22 @@
 import MenuBar from "../src/components/MenuBar";
 import {General, Title, Byline, Text, StandardText, Header, Button} from "../src/styles/Global";
-import {TechSkills} from "../src/styles/AboutStyles";
+import {Photo, TechSkills} from "../src/styles/AboutStyles";
+import charlita from "../public/images/charlita.png";
+import Image from "next/image";
 
 export default function About() {
 	const description = "Hi, I am Charlie";
 	return (
 		<>
 			<General>
+				{/* <Photo>
+					<Image src={charlita} alt="Charlie" />
+				</Photo> */}
+
 				<MenuBar />
 				<Title>About</Title>
 				<Byline>{description}</Byline>
+
 				<Text>
 					<StandardText>
 						In high school I was known as the girl who wrote, and I wanted to stay known for that, preferably for the rest of my life.

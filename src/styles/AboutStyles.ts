@@ -10,3 +10,10 @@ export const TechSkills = styled.text`
 	margin-top: 1%;
 	margin-right: 40%;
 `;
+
+export const Photo = styled.div`
+	width: 10%;
+	height: -80%;
+	margin-right: 5%;
+	margin-left: 50%;
+`;

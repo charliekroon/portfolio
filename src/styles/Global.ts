@@ -28,7 +28,8 @@ export const Title = styled.p`
 	margin-bottom: 0%;
 	margin-top: 10%;
 	${media.mobile} {
-		font-size: 50px;
+		font-size: 80px;
+		margin-top: 50%;
 	}
 `;
 
