@@ -20,7 +20,6 @@ export const Title = styled.p`
 	font-family: "Sonder";
 	font-weight: 100;
 	font-style: light-weight;
-	color: #1a1919;
 	font-size: 150px;
 	letter-spacing: 3.5px;
 	margin-left: 10%;
@@ -37,7 +36,6 @@ export const Byline = styled.p`
 	font-family: "Sonder";
 	font-weight: 50;
 	font-style: light-weight;
-	color: #1a1919;
 	font-size: 50px;
 	letter-spacing: 2px;
 	margin-left: 10%;
@@ -54,7 +52,6 @@ export const Header = styled.p`
 	font-family: "Sonder";
 	font-weight: 50;
 	font-style: light-weight;
-	color: #1a1919;
 	font-size: 28px;
 	letter-spacing: 2px;
 	margin-left: 10%;
@@ -71,7 +68,6 @@ export const StandardText = styled.text`
 	max-width: 80%;
 	font-size: 13px;
 	line-height: 1.9em;
-	color: #1a1919;
 	${media.mobile} {
 		font-size: 13px;
 		max-width: 1000px;

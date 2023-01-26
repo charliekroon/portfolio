@@ -16,7 +16,6 @@ export const ProjectsText = styled.text`
 	letter-spacing: 1px;
 	font-size: 15px;
 	max-width: 80%;
-	color: #1a1919;
 	display: grid;
 	flex-grow: 1;
 	margin-right: 40%;
@@ -27,7 +26,6 @@ export const Headertje = styled.p`
 	font-family: "Sonder";
 	font-weight: 100;
 	font-style: light-weight;
-	color: #1a1919;
 	font-size: 150px;
 	letter-spacing: 3.5px;
 	margin-left: 10%;
