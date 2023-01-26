@@ -6,6 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	background-color: #eee7e1;
+	color: #1a1919;
 }
 
 @font-face {

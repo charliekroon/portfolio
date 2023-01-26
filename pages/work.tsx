@@ -4,7 +4,7 @@ import React, {useState, useEffect} from "react";
 import {getBlogs} from "./api/blogAPI";
 import {Blog} from "../src/interfaces/blog";
 import Link from "next/link";
-import {WorkLink, ProjectsText, Headertje} from "../src/styles/WorkStyles";
+import {WorkLink, ProjectsText} from "../src/styles/WorkStyles";
 
 export default function Projects() {
 	const [blogs, setBlogs] = useState<Blog[]>([]);

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import {Description, TitleText, DescriptionText, Linkje, Menu, MenuText} from "../src/styles/HomeStyles";
+import {Description, TitleText, DescriptionText, Linkje, Menu, MenuText, HomeContainer} from "../src/styles/HomeStyles";
 
 export default function Home() {
 	const name = "Charlie Kroon";
@@ -7,7 +7,7 @@ export default function Home() {
 	const currently = "Currently working at";
 
 	return (
-		<>
+		<HomeContainer>
 			<Description>
 				<TitleText>{name}</TitleText>
 				<br />
@@ -30,6 +30,6 @@ export default function Home() {
 					<Link href="/contact">Contact</Link>{" "}
 				</MenuText>
 			</Menu>
-		</>
+		</HomeContainer>
 	);
 }
