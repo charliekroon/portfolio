@@ -13,6 +13,9 @@ export const General = styled.div`
 		flex-wrap: wrap;
 		max-width: 100%;
 		flex: 100%;
+		height: 100%;
+		min-height: 100vh;
+		justify-content: space-between;
 	}
 `;
 

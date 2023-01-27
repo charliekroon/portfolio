@@ -50,6 +50,10 @@ export const DescriptionText = styled.text`
 	line-height: 1.9em;
 	letter-spacing: 0.5px;
 	white-space: nowrap;
+	${media.mobile} {
+		display: flex;
+		max-width: 100%;
+	}
 `;
 
 export const Menu = styled.div`
@@ -65,6 +69,7 @@ export const Menu = styled.div`
 		padding: 16px;
 	}
 	${media.mobile} {
+		display: flex;
 		font-size: 16vw;
 		max-width: 100%;
 		&:hover {
