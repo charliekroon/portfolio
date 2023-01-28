@@ -4,12 +4,12 @@ To run: npm run dev
 
 - [ ] Add bottom space
 - [ ] Modify CV
-- [ ] Open Link in Seperate Tab
+- [x] Open Link in Seperate Tab
 
 #### Work Page
 
 - [ ] Add bottom space
-- [ ] Open Link in Seperate Tab
+- [x] Open Link in Seperate Tab
 
 #### Contact Page
 
@@ -19,7 +19,7 @@ To run: npm run dev
 #### Home Page
 
 - [ ] Mobile: HackerOne is not shown?
-- [ ] Open Link in Seperate Tab
+- [x] Open Link in Seperate Tab
 - [ ] Modify Menu Placement
 
 #### Styling Nice To Have's
