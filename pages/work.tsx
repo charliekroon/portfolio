@@ -22,7 +22,9 @@ export default function Projects() {
 		<>
 			<WorkLink>
 				<ul>
-					<Link href={blog.link}>{blog.title}</Link>
+					<a href={blog.link} target="_blank" rel="noopener noreferrer">
+						{blog.title}
+					</a>
 				</ul>
 			</WorkLink>
 		</>

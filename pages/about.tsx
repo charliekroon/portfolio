@@ -3,6 +3,7 @@ import {MainComponent, TitleComponent, QuoteComponent, TextComponent, HeaderComp
 
 export default function About() {
 	const description = "Hi, I am Charlie";
+
 	return (
 		<>
 			<MenuBar />
