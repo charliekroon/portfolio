@@ -15,7 +15,6 @@ export const HomeContainer = styled.div`
 	width: 100%;
 	${media.mobile} {
 		flex-direction: column;
-		justify-content: space-between;
 		max-width: 350%;
 		margin-right: 9%;
 	}
@@ -23,6 +22,10 @@ export const HomeContainer = styled.div`
 export const Text = styled.span`
 	display: flex;
 	flex-direction: column;
+	${media.mobile} {
+		font-size: 15px;
+		margin: 72px 0 32px;
+	}
 `;
 
 export const TitleText = styled.h1`
@@ -43,7 +46,6 @@ export const Description = styled.div`
 	${media.mobile} {
 		font-size: 15px;
 		margin: 72px 0 32px;
-		max-width: 100%;
 	}
 `;
 
@@ -56,7 +58,6 @@ export const DescriptionText = styled.text`
 	white-space: nowrap;
 	${media.mobile} {
 		display: flex;
-		max-width: 100%;
 	}
 `;
 

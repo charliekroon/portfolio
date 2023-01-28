@@ -9,7 +9,6 @@ const Container = styled.div`
 const IconVertical = styled.div`
 	display: flex;
 	flex-direction: column;
-	margin-left: 1%;
 	max-height: 20%;
 	flex-wrap: wrap;
 `;

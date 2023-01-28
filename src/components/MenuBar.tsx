@@ -6,7 +6,7 @@ export const Container = styled.span`
 	font-family: "Montserrat-Regular";
 	text-transform: uppercase;
 	padding: 0;
-	margin-left: 2%;
+	margin-left: 3%;
 	display: flex;
 	margin-top: 1%;
 `;

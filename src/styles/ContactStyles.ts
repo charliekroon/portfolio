@@ -1,42 +1,12 @@
 import styled from "styled-components";
 import {media} from "./HomeStyles";
 
-export const ContactText = styled.text`
-	font-family: "Montserrat-Light";
-	font-weight: 300;
-	letter-spacing: 1px;
-	font-size: 15px;
-	max-width: 80%;
-	display: grid;
-	margin-left: 10%;
-	flex-grow: 1;
-	margin-right: 40%;
-	${media.mobile} {
-		font-size: 70px;
-		margin-top: -60%;
-	}
-`;
-
-export const ContactTitle = styled.p`
-	font-family: "Sonder";
-	font-weight: 100;
-	font-style: light-weight;
-	font-size: 150px;
-	letter-spacing: 3.5px;
-	margin-left: 10%;
-	flex-grow: 1;
-	margin-bottom: -30%;
-	margin-top: 10%;
-	${media.mobile} {
-		font-size: 80px;
-		margin-top: 50%;
-	}
-`;
-
 export const Icon = styled.span`
 	align-items: center;
 	margin-top: -30%;
 	${media.mobile} {
-		margin-top: -100%;
+		position: static;
+		margin-top: -95%;
+		flex-grow: 1;
 	}
 `;
