@@ -15,6 +15,9 @@ export const HomeContainer = styled.div`
 	width: 100%;
 	${media.mobile} {
 		flex-direction: column;
+		justify-content: space-between;
+		max-width: 350%;
+		margin-right: 9%;
 	}
 `;
 export const Text = styled.span`
@@ -40,6 +43,7 @@ export const Description = styled.div`
 	${media.mobile} {
 		font-size: 15px;
 		margin: 72px 0 32px;
+		max-width: 100%;
 	}
 `;
 
@@ -95,5 +99,9 @@ export const Linkje = styled.text`
 	transform: scaleX(0);
 	&:hover {
 		animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+	}
+	${media.mobile} {
+		display: flex;
+		max-width: 100%;
 	}
 `;

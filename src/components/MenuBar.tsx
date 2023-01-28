@@ -7,7 +7,8 @@ export const Container = styled.span`
 	text-transform: uppercase;
 	padding: 0;
 	margin-left: 2%;
-	margin-top: 0.5%;
+	display: flex;
+	margin-top: 1%;
 `;
 
 export default function MenuBar() {
