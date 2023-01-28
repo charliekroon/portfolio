@@ -1,19 +1,30 @@
 To run: npm run dev
 
-### To do:
-
-- add loading component
-
 #### About Page
 
-- replace <br />
-- open hackerone link in seperate tab
+- [ ] Add bottom space
+- [ ] Modify CV
+- [ ] Open Link in Seperate Tab
 
-#### Menubar
+#### Work Page
 
-- add
+- [ ] Add bottom space
+- [ ] Open Link in Seperate Tab
 
-#### Styling
+#### Contact Page
 
-- add cursor
-- darkmode
+- [ ] Fix Text Placement
+- [ ] Fix Icon Placement
+
+#### Home Page
+
+- [ ] Mobile: HackerOne is not shown?
+- [ ] Open Link in Seperate Tab
+- [ ] Modify Menu Placement
+
+#### Styling Nice To Have's
+
+- [ ] Add loading component
+- [ ] Add Cursor
+- [ ] Dark Mode
+- [ ] a11y
