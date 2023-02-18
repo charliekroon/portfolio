@@ -4,7 +4,7 @@ import {Description, TitleText, DescriptionText, Linkje, Menu, MenuText, HomeCon
 export default function Home() {
 	const name = "Charlie Kroon";
 	const description = "Software Engineer with a background in Journalism";
-	const currently = "Currently working at";
+	const currently = "Currently working at ";
 
 	return (
 		<HomeContainer>

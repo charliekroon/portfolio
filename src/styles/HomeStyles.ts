@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const media = {
 	mobile: "@media(max-width: 844px)",
@@ -57,7 +57,7 @@ export const DescriptionText = styled.text`
 	letter-spacing: 0.5px;
 	white-space: nowrap;
 	${media.mobile} {
-		display: flex;
+		width: 100%;
 	}
 `;
 
@@ -77,6 +77,7 @@ export const Menu = styled.div`
 		display: flex;
 		font-size: 16vw;
 		max-width: 100%;
+		margin-top: -250px;
 		&:hover {
 			animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 		}
@@ -97,12 +98,9 @@ export const MenuText = styled.text`
 
 export const Linkje = styled.text`
 	left: 0;
+	font-family: "Montserrat-Light";
 	transform: scaleX(0);
 	&:hover {
 		animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-	}
-	${media.mobile} {
-		display: flex;
-		max-width: 100%;
 	}
 `;
