@@ -6,8 +6,8 @@ export const MainComponent = styled.div`
 	background: #eee7e1;
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
 	margin-left: 10%;
+	max-width: 75%;
 	${media.mobile} {
 		display: flex;
 		flex-wrap: wrap;
@@ -25,8 +25,8 @@ export const TitleComponent = styled.p`
 	font-style: light-weight;
 	font-size: 150px;
 	letter-spacing: 3.5px;
-	flex-grow: 1;
-	margin-bottom: 0vh;
+	margin-bottom: 0px;
+	max-width: 75%;
 	${media.mobile} {
 		font-size: 12vh;
 		line-height: 1em;
@@ -43,10 +43,10 @@ export const QuoteComponent = styled.p`
 	font-style: light-weight;
 	font-size: 50px;
 	letter-spacing: 2px;
-	margin-right: 20%;
-	padding-bottom: 0%;
+	padding-bottom: 1%;
 	align-items: flex-start;
 	margin-top: -0.5%;
+	max-width: 75%;
 	${media.mobile} {
 		font-size: 24px;
 		padding-bottom: 0%;
@@ -60,6 +60,8 @@ export const HeaderComponent = styled.main`
 	font-family: "Sonder";
 	font-size: 28px;
 	text-transform: uppercase;
+	max-width: 75%;
+	margin-top: 0px;
 `;
 
 export const TextComponent = styled.main`
@@ -69,7 +71,22 @@ export const TextComponent = styled.main`
 	letter-spacing: 0.5px;
 	font-size: 14px;
 	max-width: 75%;
-	margin: 0vh;
+	margin-top: -35px;
+	display: flex-start;
+	${media.mobile} {
+		max-width: 85%;
+		letter-spacing: 0px;
+	}
+`;
+
+export const SkillsComponent = styled.main`
+	font-family: "Montserrat-Light";
+	font-weight: 400;
+	line-height: 1.9em;
+	letter-spacing: 0.5px;
+	font-size: 14px;
+	max-width: 75%;
+	margin-top: 0px;
 	display: flex-start;
 	${media.mobile} {
 		max-width: 85%;

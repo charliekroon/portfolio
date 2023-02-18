@@ -13,8 +13,8 @@ To run: npm run dev
 
 #### Contact Page
 
-- [ ] Fix Text Placement
-- [ ] Fix Icon Placement
+- [x] Fix Text Placement
+- [x] Fix Icon Placement
 
 #### Home Page
 

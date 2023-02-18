@@ -5,6 +5,12 @@ export const media = {
 	tablet: "@media(max-width: 1200px)",
 };
 
+export const MainComponent = styled.div`
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+`;
+
 export const WorkLink = styled.text`
 	left: 0;
 	font-family: "Montserrat-ExtraLightItalic";
@@ -24,8 +30,7 @@ export const WorkTextComponent = styled.main`
 	max-width: 75%;
 	margin: 0vh;
 	display: flex-start;
-	margin-bottom: 1000px;
-
+	padding-bottom: 0vh;
 	${media.mobile} {
 		max-width: 85%;
 		letter-spacing: 0px;
