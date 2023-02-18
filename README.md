@@ -20,6 +20,7 @@ To run: npm run dev
 
 - [x] Open Link in Seperate Tab
 - [x] Modify Menu Placement
+- [x] Fix cut off descriptiontext on mobile
 
 #### Styling Nice To Have's
 
