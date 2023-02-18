@@ -1,4 +1,4 @@
-import styled, {css} from "styled-components";
+import styled from "styled-components";
 
 export const media = {
 	mobile: "@media(max-width: 844px)",
@@ -47,7 +47,6 @@ export const Description = styled.div`
 	flex-direction: column;
 	justify-content: center;
 	${media.mobile} {
-		font-size: 15px;
 		margin: 72px 0 32px;
 	}
 `;
@@ -60,7 +59,7 @@ export const DescriptionText = styled.text`
 	letter-spacing: 0.5px;
 	white-space: nowrap;
 	${media.mobile} {
-		width: 100%;
+		font-size: 11.5px;
 	}
 `;
 

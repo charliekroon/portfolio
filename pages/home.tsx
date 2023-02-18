@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "next/link";
-import {Description, TitleText, DescriptionText, Linkje, Menu, MenuText, HomeContainer} from "../src/styles/HomeStyles";
+import {Description, TitleText, DescriptionText, Menu, MenuText, HomeContainer} from "../src/styles/HomeStyles";
 
 export default function Home() {
 	const name = "Charlie Kroon";
 	const description = "Software Engineer with a background in Journalism";
-	const currently = "Currently working at ";
+	const currently = "Currently working at Hackerone";
 
 	return (
 		<HomeContainer>
@@ -13,15 +13,8 @@ export default function Home() {
 				<TitleText>{name}</TitleText>
 				<br />
 				<DescriptionText>{description}</DescriptionText>
-				<DescriptionText>
-					{currently}{" "}
-					<Linkje>
-						<a href="https://hackerone.com" target="_blank" rel="noopener noreferrer">
-							HackerOne
-						</a>
-					</Linkje>
-				</DescriptionText>
-			</Description>
+				<DescriptionText>{currently}</DescriptionText>
+			</Description>{" "}
 			<Menu>
 				<MenuText>
 					<Link href="/about">About</Link>{" "}

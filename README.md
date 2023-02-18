@@ -18,9 +18,8 @@ To run: npm run dev
 
 #### Home Page
 
-- [ ] Mobile: HackerOne is not shown?
 - [x] Open Link in Seperate Tab
-- [ ] Modify Menu Placement
+- [x] Modify Menu Placement
 
 #### Styling Nice To Have's
 
