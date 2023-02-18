@@ -12,11 +12,14 @@ export const HomeContainer = styled.div`
 	display: flex;
 	flex-direction: row;
 	padding: 40px;
+	touch-action: manipulation;
+
 	width: 100%;
 	${media.mobile} {
 		flex-direction: column;
 		max-width: 350%;
 		margin-right: 9%;
+		touch-action: manipulation;
 	}
 `;
 export const Text = styled.span`
@@ -67,19 +70,24 @@ export const Menu = styled.div`
 	justify-content: center;
 	animation: marquee 5s linear infinite;
 	padding: 32px;
+	touch-action: manipulation;
 	height: 100%;
 	font-size: 11vw;
 	${media.tablet} {
 		font-size: 10vw;
 		padding: 16px;
+		touch-action: manipulation;
 	}
 	${media.mobile} {
+		touch-action: manipulation;
 		display: flex;
 		font-size: 16vw;
 		max-width: 100%;
 		margin-top: -250px;
-		&:hover {
-			animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+		&:active {
+			touch-action: manipulation;
+			animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+			transition-delay: 0.5s;
 		}
 	}
 `;
@@ -89,18 +97,26 @@ export const MenuText = styled.text`
 	font-style: light-weight;
 	text-transform: uppercase;
 	transition: 3.5s;
+	touch-action: manipulation;
+
 	&:hover {
 		transition: 0.5s;
 		margin-left: 50px;
 		font-style: italic;
+		touch-action: manipulation;
 	}
 `;
 
 export const Linkje = styled.text`
-	left: 0;
 	font-family: "Montserrat-Light";
 	transform: scaleX(0);
 	&:hover {
 		animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+	}
+	${media.mobile} {
+		max-width: 100%;
+		&:hover {
+			animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+		}
 	}
 `;

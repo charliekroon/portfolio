@@ -1,3 +1,4 @@
+import React from "react";
 import MenuBar from "../src/components/MenuBar";
 import {MainComponent, TitleComponent, QuoteComponent, TextComponent, HeaderComponent, ButtonComponent} from "../src/styles/Global";
 

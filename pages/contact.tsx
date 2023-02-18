@@ -1,8 +1,8 @@
+import React from "react";
 import MenuBar from "../src/components/MenuBar";
 import {MainComponent, TextComponent, TitleComponent} from "../src/styles/Global";
 import {Icon} from "../src/styles/ContactStyles";
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Contact() {
 	return (

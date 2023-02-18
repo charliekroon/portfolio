@@ -1,3 +1,4 @@
+import React from "react";
 import Link from "next/link";
 import {Description, TitleText, DescriptionText, Linkje, Menu, MenuText, HomeContainer} from "../src/styles/HomeStyles";
 

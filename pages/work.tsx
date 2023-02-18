@@ -1,6 +1,6 @@
+import React, {useState, useEffect} from "react";
 import MenuBar from "../src/components/MenuBar";
 import {MainComponent, TitleComponent, TextComponent} from "../src/styles/Global";
-import React, {useState, useEffect} from "react";
 import {getBlogs} from "./api/blogAPI";
 import {Blog} from "../src/interfaces/blog";
 import Link from "next/link";
