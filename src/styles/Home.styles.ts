@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const media = {
-	mobile: "@media(max-width: 844px)",
-	tablet: "@media(max-width: 1200px)",
+	smallMobile: "@media (min-width: 375px) and (max-width: 677px)",
+	mobile: "@media (max-width: 500px)",
+	tablet: "@media (min-width: 768px) and (max-width: 1024px)",
 };
 
 export const HomeContainer = styled.div`
@@ -13,13 +14,18 @@ export const HomeContainer = styled.div`
 	flex-direction: row;
 	padding: 40px;
 	touch-action: manipulation;
-
-	width: 100%;
 	${media.mobile} {
+		margin: auto;
+		margin-left: -5%;
 		flex-direction: column;
-		max-width: 350%;
-		margin-right: 9%;
+		max-width: 100%;
 		touch-action: manipulation;
+	}
+	${media.tablet} {
+		max-height: 100%;
+		max-width: 75%;
+		display: flex;
+		flex-direction: column;
 	}
 `;
 
@@ -32,15 +38,16 @@ export const TitleComponent = styled.h1`
 	font-size: 15px;
 	text-transform: uppercase;
 	white-space: nowrap;
+	${media.mobile} {
+		margin-right: -20px;
+		font-size: 12px;
+	}
 `;
 
 export const DescriptionComoponent = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	${media.mobile} {
-		margin: 72px 0 32px;
-	}
 `;
 
 export const TextComponent = styled.text`
@@ -51,7 +58,12 @@ export const TextComponent = styled.text`
 	letter-spacing: 0.5px;
 	white-space: nowrap;
 	${media.mobile} {
-		font-size: 11.5px;
+		margin: inherit;
+		font-size: 9px;
+	}
+	${media.tablet} {
+		font-size: 17px;
+		margin: inherit;
 	}
 `;
 
@@ -64,22 +76,20 @@ export const MenuComponent = styled.div`
 	touch-action: manipulation;
 	height: 100%;
 	font-size: 11vw;
-	${media.tablet} {
-		font-size: 10vw;
-		padding: 16px;
-		touch-action: manipulation;
-	}
 	${media.mobile} {
+		margin: inherit;
+		margin-left: -5%;
 		touch-action: manipulation;
-		display: flex;
-		font-size: 16vw;
-		max-width: 100%;
-		margin-top: -250px;
 		&:active {
 			touch-action: manipulation;
 			animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 			transition-delay: 0.5s;
 		}
+	}
+	${media.tablet} {
+		font-size: 15vw;
+		margin-left: -50px;
+		margin-top: -60%;
 	}
 `;
 
@@ -89,7 +99,8 @@ export const MenuTextComponent = styled.text`
 	text-transform: uppercase;
 	transition: 3.5s;
 	touch-action: manipulation;
-
+	display: flex;
+	flex-direction: column;
 	&:hover {
 		transition: 0.5s;
 		margin-left: 50px;

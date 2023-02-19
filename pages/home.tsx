@@ -12,8 +12,11 @@ export default function Home() {
 			<DescriptionComoponent>
 				<TitleComponent>{name}</TitleComponent>
 				<br />
-				<TextComponent>{description}</TextComponent>
-				<TextComponent>{currently}</TextComponent>
+				<TextComponent>
+					{description}
+					<br />
+					{currently}
+				</TextComponent>
 			</DescriptionComoponent>{" "}
 			<MenuComponent>
 				<MenuTextComponent>
