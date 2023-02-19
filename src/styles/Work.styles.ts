@@ -5,13 +5,7 @@ export const media = {
 	tablet: "@media(max-width: 1200px)",
 };
 
-export const MainComponent = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-`;
-
-export const WorkLink = styled.text`
+export const LinkComponent = styled.text`
 	left: 0;
 	font-family: "Montserrat-ExtraLightItalic";
 	list-style-type: none;
@@ -21,7 +15,7 @@ export const WorkLink = styled.text`
 	}
 `;
 
-export const WorkTextComponent = styled.main`
+export const TextComponent = styled.main`
 	font-family: "Montserrat-Light";
 	font-weight: 400;
 	line-height: 1.9em;

@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import {Description, TitleText, DescriptionText, Menu, MenuText, HomeContainer} from "../src/styles/HomeStyles";
+import {DescriptionComoponent, TitleComponent, TextComponent, MenuComponent, MenuTextComponent, HomeContainer} from "../src/styles/Home.styles";
 
 export default function Home() {
 	const name = "Charlie Kroon";
@@ -9,23 +9,23 @@ export default function Home() {
 
 	return (
 		<HomeContainer>
-			<Description>
-				<TitleText>{name}</TitleText>
+			<DescriptionComoponent>
+				<TitleComponent>{name}</TitleComponent>
 				<br />
-				<DescriptionText>{description}</DescriptionText>
-				<DescriptionText>{currently}</DescriptionText>
-			</Description>{" "}
-			<Menu>
-				<MenuText>
+				<TextComponent>{description}</TextComponent>
+				<TextComponent>{currently}</TextComponent>
+			</DescriptionComoponent>{" "}
+			<MenuComponent>
+				<MenuTextComponent>
 					<Link href="/about">About</Link>{" "}
-				</MenuText>
-				<MenuText>
+				</MenuTextComponent>
+				<MenuTextComponent>
 					<Link href="/work">Work</Link>{" "}
-				</MenuText>
-				<MenuText>
+				</MenuTextComponent>
+				<MenuTextComponent>
 					<Link href="/contact">Contact</Link>{" "}
-				</MenuText>
-			</Menu>
+				</MenuTextComponent>
+			</MenuComponent>
 		</HomeContainer>
 	);
 }

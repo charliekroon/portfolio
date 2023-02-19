@@ -1,11 +1,5 @@
 import styled from "styled-components";
-import {media} from "./HomeStyles";
-
-export const MainComponent = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-`;
+import {media} from "./Home.styles";
 
 export const TitleComponent = styled.p`
 	font-family: "Sonder";
@@ -25,7 +19,7 @@ export const TitleComponent = styled.p`
 	}
 `;
 
-export const ContactTextComponent = styled.main`
+export const TextComponent = styled.main`
 	font-family: "Montserrat-Light";
 	font-weight: 400;
 	line-height: 1.9em;
@@ -41,7 +35,7 @@ export const ContactTextComponent = styled.main`
 	}
 `;
 
-export const Icon = styled.span`
+export const IconComponent = styled.span`
 	display: block;
 	margin-top: 0vh;
 	max-width: 75%;

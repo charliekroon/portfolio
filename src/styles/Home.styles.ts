@@ -22,16 +22,8 @@ export const HomeContainer = styled.div`
 		touch-action: manipulation;
 	}
 `;
-export const Text = styled.span`
-	display: flex;
-	flex-direction: column;
-	${media.mobile} {
-		font-size: 15px;
-		margin: 72px 0 32px;
-	}
-`;
 
-export const TitleText = styled.h1`
+export const TitleComponent = styled.h1`
 	font-family: "Montserrat-Regular";
 	font-weight: 500;
 	letter-spacing: 2px;
@@ -42,7 +34,7 @@ export const TitleText = styled.h1`
 	white-space: nowrap;
 `;
 
-export const Description = styled.div`
+export const DescriptionComoponent = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -51,7 +43,7 @@ export const Description = styled.div`
 	}
 `;
 
-export const DescriptionText = styled.text`
+export const TextComponent = styled.text`
 	font-family: "Montserrat-Light";
 	font-weight: 400;
 	font-size: 13px;
@@ -63,7 +55,7 @@ export const DescriptionText = styled.text`
 	}
 `;
 
-export const Menu = styled.div`
+export const MenuComponent = styled.div`
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -91,7 +83,7 @@ export const Menu = styled.div`
 	}
 `;
 
-export const MenuText = styled.text`
+export const MenuTextComponent = styled.text`
 	font-family: "Sonder";
 	font-style: light-weight;
 	text-transform: uppercase;
@@ -103,19 +95,5 @@ export const MenuText = styled.text`
 		margin-left: 50px;
 		font-style: italic;
 		touch-action: manipulation;
-	}
-`;
-
-export const Linkje = styled.text`
-	font-family: "Montserrat-Light";
-	transform: scaleX(0);
-	&:hover {
-		animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-	}
-	${media.mobile} {
-		max-width: 100%;
-		&:hover {
-			animation: text-blur-out 1.2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
-		}
 	}
 `;

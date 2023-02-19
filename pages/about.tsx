@@ -1,6 +1,7 @@
 import React, {useEffect} from "react";
 import MenuBar from "../src/components/MenuBar";
-import {MainComponent, SkillsComponent, TitleComponent, QuoteComponent, TextComponent, HeaderComponent, ButtonComponent} from "../src/styles/Global";
+import {MainComponent, TitleComponent, TextComponent} from "../src/styles/Global.styles";
+import {SkillsComponent, QuoteComponent, HeaderComponent, ButtonComponent} from "../src/styles/About.styles";
 
 export default function About() {
 	const description = "Hi, I am Charlie";

@@ -1,7 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Home from "./home";
-import {Container} from "../src/styles/Global";
+import {Container} from "../src/styles/Global.styles";
 
 export default function Index() {
 	return (

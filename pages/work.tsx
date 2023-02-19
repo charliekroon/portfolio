@@ -1,20 +1,20 @@
 import React, {useState, useEffect} from "react";
 import MenuBar from "../src/components/MenuBar";
-import {MainComponent, TitleComponent, TextComponent} from "../src/styles/Global";
+import {MainComponent, TitleComponent} from "../src/styles/Global.styles";
 import {getBlogs} from "./api/blogAPI";
 import {Blog} from "../src/interfaces/blog";
 import Link from "next/link";
-import {WorkLink, WorkTextComponent} from "../src/styles/WorkStyles";
+import {LinkComponent, TextComponent} from "../src/styles/Work.styles";
 
-export default function Projects() {
+export default function Work() {
 	const [blogs, setBlogs] = useState<Blog[]>([]);
 
 	useEffect(() => {
-		getAllBlogs();
+		document.title = "Work";
 	}, []);
 
 	useEffect(() => {
-		document.title = "Work";
+		getAllBlogs();
 	}, []);
 
 	const getAllBlogs = async () => {
@@ -22,15 +22,15 @@ export default function Projects() {
 		return setBlogs(allBlogs);
 	};
 
-	const displayBlogjes = blogs.map(blog => (
+	const displayBlogs = blogs.map(blog => (
 		<>
-			<WorkLink>
+			<LinkComponent>
 				<ul>
 					<a href={blog.link} target="_blank" rel="noopener noreferrer">
 						{blog.title}
 					</a>
 				</ul>
-			</WorkLink>
+			</LinkComponent>
 		</>
 	));
 
@@ -39,27 +39,27 @@ export default function Projects() {
 			<MenuBar />
 			<MainComponent>
 				<TitleComponent>Work</TitleComponent>
-				<WorkTextComponent>
-					I occasionally write a blog about the things I've learned, things I've enjoyed, or topics that I wish I had found when I first started as a software engineer. You can read them here: <div> {displayBlogjes}</div>
+				<TextComponent>
+					I occasionally write a blog about the things I've learned, things I've enjoyed, or topics that I wish I had found when I first started as a software engineer. You can read them here: <div> {displayBlogs}</div>
 					<br />
 					<div>
 						I build very small side projects, usually to{" "}
-						<WorkLink>
+						<LinkComponent>
 							<Link href="https://github.com/charliekroon/projectje">
 								<strong>learn something new</strong>
 							</Link>
-						</WorkLink>
+						</LinkComponent>
 						, for{" "}
-						<WorkLink>
+						<LinkComponent>
 							<Link href="https://github.com/charliekroon/spelen-met-css-animations">
 								<strong>fun</strong>
 							</Link>
-						</WorkLink>
+						</LinkComponent>
 						, or because it's something I need in my life but can't find elsewhere.{" "}
 					</div>
 					<br />
 					<div>There are soooo many things I enjoy or want to learn more about, so I have to pace myself and focus on one thing at a time. For example, I once wanted to learn how to create my own NFT contracts. Currently, I'm focused on front-end development (outside of work, as at work I focus on both front-end and back-end) and in particular, creating coolprettycute design stuff with code.</div>
-				</WorkTextComponent>
+				</TextComponent>
 			</MainComponent>
 		</>
 	);

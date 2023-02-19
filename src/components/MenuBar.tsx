@@ -1,22 +1,13 @@
-import styled from "styled-components";
+import React from "react";
 import Link from "next/link";
-
-export const Container = styled.span`
-	background: #eee7e1;
-	font-family: "Montserrat-Regular";
-	text-transform: uppercase;
-	padding: 0;
-	margin-left: 3%;
-	display: flex;
-	margin-top: 1%;
-`;
+import {MenuBarContainer} from "../styles/Global.styles";
 
 export default function MenuBar() {
 	return (
 		<>
-			<Container>
+			<MenuBarContainer>
 				<Link href="/">Home</Link>{" "}
-			</Container>
+			</MenuBarContainer>
 		</>
 	);
 }

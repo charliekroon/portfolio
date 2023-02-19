@@ -55,7 +55,6 @@ a {
 
 }
 
-
 @media 
 	body {
 		color: #eee7e1;
