@@ -20,7 +20,7 @@ export default function About() {
 					In high school I was known as the girl who wrote, and I wanted to stay known for that, preferably for the rest of my life.
 					<p>After studying journalism, I worked as a freelance content and copywriter, journalist, and social media marketer for various clients on a project basis.</p>
 					<p>As a twelve-year-old, I worked tirelessly on my own Kindertent blog (a Dutch Wordpress for children). In my early twenties I would lose myself trying to edit custom Tumblr Themes with CSS and HTML. With the years my interest in tech grew, and gradually I came to the conclusion that, maybe I did not want to be the girl who wrote for the rest of my life.</p>
-					<p>In 2020, I applied for Codaisseur, an 11-week bootcamp where I learned the basics of coding. While I had no idea what I was doing, my passion for creating webapps was reborn.</p>
+					<p>In 2020, I applied for Codaisseur, a 11-week bootcamp where I learned the basics of coding. While I had no idea what I was doing, my passion for creating webapps was reborn.</p>
 					<p>I am currently working as a Software Engineer at HackerOne. HackerOne is a bug bounty platform that connects businesses with ethical hackers. Customers include Google, Spotify, TikTok, Goldman Sachs and The U.S. Department of Defense. On a daily basis, I primarily work on the core functionality of the platform - the bug bounty program.</p>
 				</TextComponent>
 				<HeaderComponent>Languages and Technical Skills</HeaderComponent>
