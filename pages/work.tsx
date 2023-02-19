@@ -45,7 +45,7 @@ export default function Work() {
 					<div>
 						I build very small side projects, usually to{" "}
 						<LinkComponent>
-							<Link href="https://github.com/charliekroon/report-app">
+							<Link href="https://github.com/charliekroon/portfolio">
 								<strong>learn something new</strong>
 							</Link>
 						</LinkComponent>
