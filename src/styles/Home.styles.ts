@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const media = {
-	smallMobile: "@media (min-width: 375px) and (max-width: 677px)",
+	smallMobile: "@media (min-width: 320px) and (max-width: 677px)",
 	mobile: "@media (max-width: 500px)",
 	tablet: "@media (min-width: 768px) and (max-width: 1024px)",
 };
@@ -77,8 +77,8 @@ export const MenuComponent = styled.div`
 	height: 100%;
 	font-size: 11vw;
 	${media.mobile} {
-		margin: inherit;
-		margin-left: -5%;
+		font-size: 60px;
+		margin-left: -30px;
 		touch-action: manipulation;
 		&:active {
 			touch-action: manipulation;
