@@ -33,7 +33,7 @@ export default function About() {
 					<br />
 					TailwindCSS / Styled Components
 				</SkillsComponent>
-				<a href="https://drive.google.com/file/d/1PoT4Rq8lS5fk9CzztGtbQDDR30R-UF6G/view?usp=share_link" target="_blank" rel="noopener noreferrer">
+				<a href="https://drive.google.com/file/d/1Q3PoO2p0EHimg5uGp6j16kZWzaubzLJ5/view?usp=sharing" target="_blank" rel="noopener noreferrer">
 					<ButtonComponent>My CV</ButtonComponent>
 				</a>
 			</MainComponent>
