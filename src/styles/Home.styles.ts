@@ -59,7 +59,7 @@ export const TextComponent = styled.text`
 	white-space: nowrap;
 	${media.mobile} {
 		margin: inherit;
-		font-size: 9px;
+		font-size: 10px;
 	}
 	${media.tablet} {
 		font-size: 17px;
