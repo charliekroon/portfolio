@@ -1,10 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import MenuBar from "../src/components/MenuBar";
 import {MainComponent} from "../src/styles/Global";
 import {Icon, ContactTextComponent, TitleComponent} from "../src/styles/ContactStyles";
 import Image from "next/image";
 
 export default function Contact() {
+	useEffect(() => {
+		document.title = "Contact";
+	}, []);
 	return (
 		<>
 			<MenuBar />

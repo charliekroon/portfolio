@@ -13,6 +13,10 @@ export default function Projects() {
 		getAllBlogs();
 	}, []);
 
+	useEffect(() => {
+		document.title = "Work";
+	}, []);
+
 	const getAllBlogs = async () => {
 		const allBlogs = await getBlogs();
 		return setBlogs(allBlogs);

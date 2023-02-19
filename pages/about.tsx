@@ -1,9 +1,13 @@
-import React from "react";
+import React, {useEffect} from "react";
 import MenuBar from "../src/components/MenuBar";
 import {MainComponent, SkillsComponent, TitleComponent, QuoteComponent, TextComponent, HeaderComponent, ButtonComponent} from "../src/styles/Global";
 
 export default function About() {
 	const description = "Hi, I am Charlie";
+
+	useEffect(() => {
+		document.title = "About";
+	}, []);
 
 	return (
 		<>
@@ -28,7 +32,7 @@ export default function About() {
 					<br />
 					TailwindCSS / Styled Components
 				</SkillsComponent>
-				<a href="https://drive.google.com/file/d/1aBq29AbTXdve04w46eCjTom_Ze0XrkWz/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+				<a href="https://drive.google.com/file/d/1PoT4Rq8lS5fk9CzztGtbQDDR30R-UF6G/view?usp=share_link" target="_blank" rel="noopener noreferrer">
 					<ButtonComponent>My CV</ButtonComponent>
 				</a>
 			</MainComponent>
