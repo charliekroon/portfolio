@@ -14,7 +14,7 @@ export default function Contact() {
 			<MenuBar />
 			<MainComponent>
 				<TitleComponent>Hey!</TitleComponent>
-				<TextComponent>Send me a message or shoot me an email on thecharliekroon@gmail.com or follow me on the internet:</TextComponent>
+				<TextComponent>Send me a message or shoot me an email on charliergkroon@gmail.com or follow me on the internet:</TextComponent>
 				<IconBar />
 			</MainComponent>
 		</>
