@@ -19,13 +19,12 @@ export default function About() {
 				<TextComponent>
 					<p>
 						I am a Software Engineer based in The Netherlands with a background in content writing, journalism, and social media marketing. After several years of freelancing across these fields, I transitioned to
-						software development in 2020 by completing an 11-week intensive Full Stack Developer bootcamp.
+						software development in 2020.
 					</p>
 					<p>
-						Currently, I’m a Software Engineer at HackerOne, a bug bounty platform that bridges businesses and ethical hackers. My work involves enhancing the core functionality of the bug bounty program, collaborating
-						with clients like Google, Spotify, TikTok, Goldman Sachs, and the U.S. Department of Defense.
+						Since October 2024, I’m a Software Engineer at GitLab, where I am a part of the Threat Insights team.
 					</p>
-					<p>In September 2024, I'll be joining GitLab as a Software Engineer.</p>
+					<p> Before working at GitLab, I was as a Software Engineer at HackerOne, a bug bounty platform that bridges businesses and ethical hackers.</p>
 				</TextComponent>
 				<HeaderComponent>Languages and Technical Skills</HeaderComponent>
 				<SkillsComponent>
