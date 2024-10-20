@@ -5,7 +5,7 @@ import {DescriptionComoponent, TitleComponent, TextComponent, MenuComponent, Men
 export default function Home() {
 	const name = "Charlie Kroon";
 	const description = "Software Engineer with a background in Journalism";
-	const currently = "Currently working at Hackerone";
+	const currently = "Currently working at GitLab";
 
 	return (
 		<HomeContainer>
